@@ -5,11 +5,11 @@ import Tab from "react-bootstrap/Tab";
 import ImagenMenu from "../ImagenMenu";
 
 import menuCantinero from "../../../data/imagenes/MenuEspanol/menucantinero150122.jpg";
-import menuHamburguesas from "../../../data/imagenes/MenuEspanol/menu_hamburguesa 150122.jpg";
-import menuMixologia from "../../../data/imagenes/MenuEspanol/mixologiamenu150122.jpg";
+import menuHamburguesas from "../../../data/imagenes/MenuEspanol/menuhamburguesas230622.jpg";
+import menuMixologia from "../../../data/imagenes/MenuEspanol/mixologianuevo260622.jpg";
 import menuTacos from "../../../data/imagenes/MenuEspanol/tacosmenu100222.jpg";
-import menuPizzas from "../../../data/imagenes/MenuEspanol/menupizza100222.jpg";
-import menuVeggie from "../../../data/imagenes/MenuEspanol/menuveggie300322nuevo.jpg";
+import menuPizzas from "../../../data/imagenes/MenuEspanol/menupizza160622.jpg";
+import menuVeggie from "../../../data/imagenes/MenuEspanol/menuveggie170622.jpg";
 import menuBebidas1 from "../../../data/imagenes/MenuEspanol/MENU DESTILADOS JUNIO 2022nuevo-1.jpg";
 import menuBebidas2 from "../../../data/imagenes/MenuEspanol/MENU DESTILADOS JUNIO 2022nuevo-2.jpg";
 import menuBebidas3 from "../../../data/imagenes/MenuEspanol/MENU DESTILADOS JUNIO 2022nuevo-3.jpg";

@@ -8,8 +8,8 @@ import menuCantinero from "../../../data/imageneS/MenuIngles/menucantinerofrente
 import menuHamburguesas from "../../../data/imagenes/MenuIngles/menu_hamburguesa ingles150122.jpg";
 import menuMixologia from "../../../data/imagenes/MenuIngles/mixologianuevo150322ingles.jpg";
 import menuTacos from "../../../data/imagenes/MenuIngles/tacosmenuingles020622.jpg";
-import menuPizzas from "../../../data/imagenes/MenuIngles/menupizzaingles100222.jpg";
-import menuVeggie from "../../../data/imagenes/MenuIngles/menuveggie300322INGLES.jpg";
+import menuPizzas from "../../../data/imagenes/MenuIngles/menupizzaingles240622.jpg";
+import menuVeggie from "../../../data/imagenes/MenuIngles/menuveggie240622INGLES.jpg";
 import menuBebidas1 from "../../../data/imagenes/MenuIngles/MENUDESTILADOSJUNIO2022NUEVOINGLES-1.jpg";
 import menuBebidas2 from "../../../data/imagenes/MenuIngles/MENUDESTILADOSJUNIO2022NUEVOINGLES-2.jpg";
 import menuBebidas3 from "../../../data/imagenes/MenuIngles/MENUDESTILADOSJUNIO2022NUEVOINGLES-3.jpg";

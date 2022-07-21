@@ -4,10 +4,12 @@ import { Link } from "gatsby";
 import { QuickInfoWrapper } from "../styles/globalStyles";
 import Section from "../styles/section";
 
+import "../../styles/global.css";
+
 const QuickInfo = () => (
-  <Section className="mt-2 h1">
+  <Section className="mt-2">
     <div>
-      <h1 className="font-weight-bold LloronaNombre">Cantina La Llorona</h1>
+      <h1 className="text-center font-weight-bold">Cantina La Llorona</h1>
     </div>
     <div>
       <h4 className="text-center tituloSection">Hacia TI</h4>
@@ -16,7 +18,7 @@ const QuickInfo = () => (
     </div>
 
     <QuickInfoWrapper>
-      <p className="text">
+      <p className="text text-center">
         La Llorona surge de la fusión de la riqueza de la cocina urbana
         contemporánea y la vida de la cantina mexicana. Nuestra especialidad son
         las Hamburguesas con pan artesanal horneado por nosotros, con carne 100%
