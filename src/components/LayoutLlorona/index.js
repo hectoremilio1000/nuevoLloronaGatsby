@@ -5,7 +5,7 @@ import { GlobalStyle } from "../styles/globalStyles";
 import Navbar from "../NavBar";
 import Footer from "../Footer";
 
-function Layout({ children }) {
+function LayoutLlorona({ children }) {
   return (
     <>
       <GlobalStyle />
@@ -16,4 +16,4 @@ function Layout({ children }) {
   );
 }
 
-export default Layout;
+export default LayoutLlorona;

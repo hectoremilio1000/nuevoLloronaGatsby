@@ -1,6 +1,5 @@
 import React from "react";
 import Calendario from "../components/Calendario";
-import Layout from "../components/layout";
 import { HomeHeader } from "../components/styles/headers";
 
 import { QuickInfoWrapper } from "../components/styles/globalStyles";
@@ -11,10 +10,11 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import IconButton from "@mui/material/IconButton";
+import LayoutLlorona from "../components/LayoutLlorona";
 
 export default function Reserva() {
   return (
-    <Layout>
+    <LayoutLlorona>
       <HomeHeader />
       <Calendario />
       <Section>
@@ -59,7 +59,7 @@ export default function Reserva() {
           </ImageListItem>
         ))}
       </ImageList>
-    </Layout>
+    </LayoutLlorona>
   );
 }
 

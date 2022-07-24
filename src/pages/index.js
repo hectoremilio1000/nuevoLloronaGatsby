@@ -1,18 +1,18 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/Layout";
 import QuickInfo from "../components/QuickInfo";
 import { QuickInfoWrapper } from "../components/styles/globalStyles";
 import { HomeHeader } from "../components/styles/headers";
 import TitlebarImageList from "../components/TitlebarImageList";
 import Section from "../components/styles/section";
 import "../styles/global.css";
+import LayoutLlorona from "../components/LayoutLlorona";
 
 const IndexPage = () => {
   return (
     <main>
       <title>La Llorona</title>
-      <Layout>
+      <LayoutLlorona>
         <HomeHeader />
         <header
           className="col jumbotron-fluid bannerFinal"
@@ -63,7 +63,7 @@ const IndexPage = () => {
             </Link>
           </div>
         </QuickInfoWrapper>
-      </Layout>
+      </LayoutLlorona>
     </main>
   );
 };

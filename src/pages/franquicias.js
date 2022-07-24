@@ -1,14 +1,12 @@
 import React from "react";
-import Layout from "../components/layout";
 import { HomeHeader } from "../components/styles/headers";
 import { Link } from "gatsby";
-import MezcalInfo from "../components/mezcalInfo";
-import MezcalImage from "../components/MezcalImage";
 import FranquiciaInfo from "../components/FranquiciaInfo/index";
+import LayoutLlorona from "../components/LayoutLlorona";
 
 function Franquicias() {
   return (
-    <Layout>
+    <LayoutLlorona>
       <HomeHeader />
       <header
         className="col jumbotron-fluid pt-5"
@@ -36,8 +34,7 @@ function Franquicias() {
         </div>
       </header>
       <FranquiciaInfo className="mt-2" />
-      <MezcalImage />
-    </Layout>
+    </LayoutLlorona>
   );
 }
 

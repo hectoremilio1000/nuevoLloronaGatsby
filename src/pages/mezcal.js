@@ -1,13 +1,14 @@
 import React from "react";
-import Layout from "../components/layout";
+
 import { HomeHeader } from "../components/styles/headers";
 import { Link } from "gatsby";
-import MezcalInfo from "../components/mezcalInfo";
 import MezcalImage from "../components/MezcalImage";
+import MezcalInfo from "../components/MezcalInfo/index";
+import LayoutLlorona from "../components/LayoutLlorona/index";
 
 function Mezcal() {
   return (
-    <Layout>
+    <LayoutLlorona>
       <HomeHeader />
       <header
         className="col jumbotron-fluid bannerFinal2"
@@ -36,7 +37,7 @@ function Mezcal() {
       </header>
       <MezcalInfo className="mt-2" />
       <MezcalImage />
-    </Layout>
+    </LayoutLlorona>
   );
 }
 

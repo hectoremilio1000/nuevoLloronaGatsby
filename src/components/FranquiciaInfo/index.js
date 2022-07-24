@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { Button } from "antd";
 
 import { QuickInfoWrapper } from "../styles/globalStyles";
 import Section from "../styles/section";

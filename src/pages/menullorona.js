@@ -1,14 +1,14 @@
 import React from "react";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
-import Layout from "../components/Layout";
 import { HomeHeader } from "../components/styles/headers";
 import MenuEspa from "../components/Menu/MenuEspa/index";
 import MenuInlges from "../components/Menu/MenuIngles/index";
+import LayoutLlorona from "../components/LayoutLlorona";
 
 function MenuLlorona() {
   return (
-    <Layout>
+    <LayoutLlorona>
       <HomeHeader />
       <section className="menu section">
         <Tabs
@@ -25,7 +25,7 @@ function MenuLlorona() {
           </Tab>
         </Tabs>
       </section>
-    </Layout>
+    </LayoutLlorona>
   );
 }
 
