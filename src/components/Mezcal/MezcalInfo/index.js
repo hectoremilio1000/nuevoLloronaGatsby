@@ -50,6 +50,13 @@ const MezcalInfo = () => (
         destilación en olla de barro.
       </p>
     </QuickInfoWrapper>
+    <div className="subSubDiv1Banner">
+      <a href="https://wa.me/+5215549242477">
+        <button type="button" className="buttonComponente">
+          ¡Ordenar ya!
+        </button>
+      </a>
+    </div>
   </Section>
 );
 

@@ -8,7 +8,7 @@ import "../../styles/globalStyles";
 
 function ProcesoElaboracion() {
   return (
-    <Section className="mt-2">
+    <Section className="mt-0">
       <div>
         <h4 className="text-center tituloSection">PROCESO ANCESTRAL</h4>
         <h2 className="text-center subTituloSection">DE ELABORACIÓN</h2>

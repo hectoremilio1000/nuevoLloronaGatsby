@@ -12,8 +12,8 @@ function NuestroMezcalImages() {
   return (
     <Section>
       <div>
-        <h4 className="text-center tituloSection">Mezcales</h4>
-        <h2 className="text-center subTituloSection">JABALÍ & TEPEZTATE</h2>
+        <h4 className="text-center tituloSection">La pasión al mezcal</h4>
+        <h2 className="text-center subTituloSection">nos Une</h2>
         <div className="linea"></div>
       </div>
       <ImageList>
@@ -39,29 +39,36 @@ function NuestroMezcalImages() {
           </ImageListItem>
         ))}
       </ImageList>
+      <div className="subSubDiv1Banner">
+        <a href="https://wa.me/+5215549242477">
+          <button type="button" className="buttonComponente">
+            ¡Comprar ahora!
+          </button>
+        </a>
+      </div>
     </Section>
   );
 }
 
 const itemData = [
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9982.jpg",
-    title: "Nuestro Palenque, Santa Catarina Minas, Oaxaca",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9973.jpg",
+    title: "Niurka con su hija Romi Marcos degustando nuestro Mezcal",
     rows: 2,
     cols: 2,
     featured: true,
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9984.jpg",
-    title: "Molienda con manos de artesanos oaxaqueños",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_0027.jpg",
+    title: "Nuestra botella",
   },
   {
-    img: "https://images.squarespace-cdn.com/content/5f04aed9153c537f9abcb851/1595359863647-9FCGVBUGXDSW2IKBDQLF/IMG_1905.jpg?format=1000w&content-type=image%2Fjpeg",
-    title: "Fermentación 100% libre de químicos",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_0043.jpg",
+    title: "Cual prefieres Jabalí o Tepeztate",
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9983.jpg",
-    title: "Destilación en Ollas de Barro de Cobre",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9975.jpg",
+    title: "La pasión por el mezcal nos caracteriza",
     cols: 2,
   },
 ];

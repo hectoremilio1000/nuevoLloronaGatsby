@@ -31,7 +31,7 @@ function Mezcal() {
             <div className="subSubDiv1Banner">
               <a href="https://wa.me/+5215549242477">
                 <button type="button" className="buttonComponente">
-                  ¡Haznos tu pedido ya!
+                  ¡Comprar!
                 </button>
               </a>
             </div>
@@ -39,7 +39,7 @@ function Mezcal() {
         </div>
       </header>
 
-      <MezcalInfo className="mt-2" />
+      <MezcalInfo className="mt-0" />
       <ProcesoElaboracion />
       <TitlebarImageList />
       <NuestroMezcalInfo />

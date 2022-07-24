@@ -39,6 +39,13 @@ export default function TitlebarImageList() {
           </ImageListItem>
         ))}
       </ImageList>
+      <div className="subSubDiv1Banner">
+        <a href="https://wa.me/+5215549242477">
+          <button type="button" className="buttonComponente">
+            ¡Comprar ahora!
+          </button>
+        </a>
+      </div>
     </Section>
   );
 }
