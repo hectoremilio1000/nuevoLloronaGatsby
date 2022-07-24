@@ -34,6 +34,7 @@ function Franquicias() {
         </div>
       </header>
       <FranquiciaInfo className="mt-2" />
+      <TitlebarImageList />
     </LayoutLlorona>
   );
 }

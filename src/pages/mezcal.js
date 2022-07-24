@@ -5,6 +5,7 @@ import { Link } from "gatsby";
 import MezcalImage from "../components/MezcalImage";
 import MezcalInfo from "../components/MezcalInfo/index";
 import LayoutLlorona from "../components/LayoutLlorona/index";
+import TitlebarImageList from "../components/Mezcal/TitlebarImageList";
 
 function Mezcal() {
   return (
@@ -26,17 +27,17 @@ function Mezcal() {
             </h3>
 
             <div className="subSubDiv1Banner">
-              <Link to="/reserva">
+              <a href="https://wa.me/+5215549242477">
                 <button type="button" className="buttonComponente">
-                  ¡Reserva ya!
+                  ¡Haznos tu pedido ya!
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
       </header>
       <MezcalInfo className="mt-2" />
-      <MezcalImage />
+      <TitlebarImageList />
     </LayoutLlorona>
   );
 }

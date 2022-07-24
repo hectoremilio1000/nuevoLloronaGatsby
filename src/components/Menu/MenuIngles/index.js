@@ -4,7 +4,7 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import ImagenMenu from "../ImagenMenu";
 
-import menuCantinero from "../../../data/imageneS/MenuIngles/menucantinerofrente150322inglesnuevofinal.jpg";
+import menuCantinero from "../../../data/imagenes/MenuIngles/menucantinerofrente150322inglesnuevofinal.jpg";
 import menuHamburguesas from "../../../data/imagenes/MenuIngles/menu_hamburguesa ingles150122.jpg";
 import menuMixologia from "../../../data/imagenes/MenuIngles/mixologianuevo150322ingles.jpg";
 import menuTacos from "../../../data/imagenes/MenuIngles/tacosmenuingles020622.jpg";
