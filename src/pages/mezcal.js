@@ -2,10 +2,12 @@ import React from "react";
 
 import { HomeHeader } from "../components/styles/headers";
 import { Link } from "gatsby";
-import MezcalImage from "../components/MezcalImage";
-import MezcalInfo from "../components/MezcalInfo/index";
+import MezcalInfo from "../components/Mezcal/MezcalInfo";
 import LayoutLlorona from "../components/LayoutLlorona/index";
 import TitlebarImageList from "../components/Mezcal/TitlebarImageList";
+import ProcesoElaboracion from "../components/Mezcal/ProcesoElaboracion/index";
+import NuestroMezcalInfo from "../components/Mezcal/NuestroMezcalInfo";
+import NuestroMezcalImages from "../components/Mezcal/NuestroMezcalImages";
 
 function Mezcal() {
   return (
@@ -23,7 +25,7 @@ function Mezcal() {
         <div className="d-flex subContenedor2Banner">
           <div className="subDiv2Banner">
             <h3 className=" font-weight-bold proximamente2 text-white">
-              Mezcal Llorona <b>Próximamente</b> cómpralo aquí
+              Cómpralo aquí o en Nuestra Sucursal de la Roma Condesa
             </h3>
 
             <div className="subSubDiv1Banner">
@@ -36,8 +38,12 @@ function Mezcal() {
           </div>
         </div>
       </header>
+
       <MezcalInfo className="mt-2" />
+      <ProcesoElaboracion />
       <TitlebarImageList />
+      <NuestroMezcalInfo />
+      <NuestroMezcalImages />
     </LayoutLlorona>
   );
 }

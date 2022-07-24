@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import { QuickInfoWrapper } from "../styles/globalStyles";
-import Section from "../styles/section";
+import { QuickInfoWrapper } from "../../styles/globalStyles";
+import Section from "../../styles/section";
 
-import "../../styles/global.css";
+import "../../styles/globalStyles";
 
 const MezcalInfo = () => (
   <Section className="mt-2">

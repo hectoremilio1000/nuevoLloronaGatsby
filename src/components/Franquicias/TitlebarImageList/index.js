@@ -12,8 +12,8 @@ export default function TitlebarImageList() {
   return (
     <Section>
       <div>
-        <h4 className="text-center tituloSection">Ancestral</h4>
-        <h2 className="text-center subTituloSection">Proceso</h2>
+        <h4 className="text-center tituloSection">Mezcales</h4>
+        <h2 className="text-center subTituloSection">JABALÍ & TEPEZTATE</h2>
         <div className="linea"></div>
       </div>
       <ImageList>
@@ -45,23 +45,35 @@ export default function TitlebarImageList() {
 
 const itemData = [
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9982.jpg",
-    title: "Nuestro Palenque, Santa Catarina Minas, Oaxaca",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/hamburguesa_resistir_2_insta.JPG",
+    title: "Hamburguesa de tocino",
     rows: 2,
     cols: 2,
     featured: true,
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9984.jpg",
-    title: "Molienda con manos de artesanos oaxaqueños",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/HAMBURGUESA_CAMARON_BBQ+copy.JPG",
+    title: "Hamburguesa de camarón",
   },
   {
-    img: "https://images.squarespace-cdn.com/content/5f04aed9153c537f9abcb851/1595359863647-9FCGVBUGXDSW2IKBDQLF/IMG_1905.jpg?format=1000w&content-type=image%2Fjpeg",
-    title: "Fermentación 100% libre de químicos",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/bbq2reducidatamano.jpg",
+    title: "BBQ casa",
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9983.jpg",
-    title: "Destilación en Ollas de Barro de Cobre",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/hamburguesahuevo.jpg",
+    title: "DON HUEVO",
     cols: 2,
+  },
+  {
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/pizza_margarita_insta.jpg",
+    title: "Pizza margarita",
+    cols: 2,
+  },
+  {
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/mazapan.jpeg",
+    title: "Martiní de Mazapán",
+    rows: 2,
+    cols: 2,
+    featured: true,
   },
 ];

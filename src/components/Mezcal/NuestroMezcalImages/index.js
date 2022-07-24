@@ -8,12 +8,12 @@ import InfoIcon from "@mui/icons-material/Info";
 import Title from "../../Title";
 import Section from "../../styles/section";
 
-export default function TitlebarImageList() {
+function NuestroMezcalImages() {
   return (
     <Section>
       <div>
-        <h4 className="text-center tituloSection">Ancestral</h4>
-        <h2 className="text-center subTituloSection">Proceso</h2>
+        <h4 className="text-center tituloSection">Mezcales</h4>
+        <h2 className="text-center subTituloSection">JABALÍ & TEPEZTATE</h2>
         <div className="linea"></div>
       </div>
       <ImageList>
@@ -65,3 +65,5 @@ const itemData = [
     cols: 2,
   },
 ];
+
+export default NuestroMezcalImages;
