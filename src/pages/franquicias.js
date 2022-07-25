@@ -36,6 +36,13 @@ function Franquicias() {
       </header>
       <FranquiciaInfo className="mt-2" />
       <TitlebarImageList />
+      <div className="subSubDiv1Banner mb-3">
+        <a href="https://wa.me/+5215549242477">
+          <button type="button" className="buttonComponente">
+            ¡Solicita información ya!
+          </button>
+        </a>
+      </div>
     </LayoutLlorona>
   );
 }

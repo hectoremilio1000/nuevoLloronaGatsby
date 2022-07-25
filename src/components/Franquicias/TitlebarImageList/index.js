@@ -12,8 +12,10 @@ export default function TitlebarImageList() {
   return (
     <Section>
       <div>
-        <h4 className="text-center tituloSection">Mezcales</h4>
-        <h2 className="text-center subTituloSection">JABALÍ & TEPEZTATE</h2>
+        <h4 className="text-center tituloSection">Experiencias únicas</h4>
+        <h2 className="text-center subTituloSection">
+          que generan grandes ganancias
+        </h2>
         <div className="linea"></div>
       </div>
       <ImageList>
@@ -45,33 +47,45 @@ export default function TitlebarImageList() {
 
 const itemData = [
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/hamburguesa_resistir_2_insta.JPG",
-    title: "Hamburguesa de tocino",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/lugarAfuera.jpg",
+    title: "Diseño único exterior",
     rows: 2,
     cols: 2,
     featured: true,
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/HAMBURGUESA_CAMARON_BBQ+copy.JPG",
-    title: "Hamburguesa de camarón",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/lloronaDentro.jpg",
+    title: "Diseño industrial contrastando con una terraza floral",
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/bbq2reducidatamano.jpg",
-    title: "BBQ casa",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0067.jpg",
+    title: "Piñata cumpleañera",
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/hamburguesahuevo.jpg",
-    title: "DON HUEVO",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0069.jpg",
+    title: "Pizzas italianas auténticas",
     cols: 2,
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/pizza_margarita_insta.jpg",
-    title: "Pizza margarita",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0071.jpg",
+    title: "Embajadores de la Marca",
     cols: 2,
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/mazapan.jpeg",
-    title: "Martiní de Mazapán",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0059.jpg",
+    title: "Bebidas Únicas",
+    rows: 2,
+    cols: 2,
+    featured: true,
+  },
+  {
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0062.jpg",
+    title: "Experiencias gastronómicas",
+    cols: 2,
+  },
+  {
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0063.jpg",
+    title: "Hamburguesas Trendy",
     rows: 2,
     cols: 2,
     featured: true,
