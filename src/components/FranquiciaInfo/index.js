@@ -28,6 +28,10 @@ function FranquiciaInfo() {
           Con un modelo único de experiencias gastronómicas que incluyen:
           <ul>
             <li className="text text-justify">
+              Mixología y Gastronomía única con un recetario mejorado
+              continúamente y con procesos claros.
+            </li>
+            <li className="text text-justify">
               Producción y Venta de nuestro propio <b>Mezcal Artesanal</b>{" "}
               producido en Santa Catarina Minas, Oaxaca.
             </li>
@@ -47,19 +51,26 @@ function FranquiciaInfo() {
               seguir para nuestro personal.
             </li>
             <li className="text text-justify">
-              <b>Software</b> programado especialmente para el concepto para
+              <b>Software</b> programado especialmente para nuestra empresa para
               Administrar los Inventarios, así como acceder a las Ventas, Costos
               y Utilidades en tiempo real, permitiéndonos que la información sea
               muy transparente en todo momento, y que nos ayude a analizar y
-              exponenciar nuestras capacidades como Modelo de Negocio .
+              exponenciar nuestras capacidades como Modelo de Negocio.
             </li>
           </ul>
-          Nos permite garantizar un
+          Siendo esto, así como la experiencia del grupo restaurantero plasmada
+          en varios modelos de negocio exitósos lo que nos permite tener un
           <span className="text-uppercase font-weight-bold h4">
             {" "}
             retorno de inversión de 1 año.
           </span>
         </p>{" "}
+        <p className="text text-justify">
+          En este sentido, se han construido dos modelos de negocio que permiten
+          adecuarse a las características del entorno económico donde exista la
+          capacidad de establecer uno, sin tener que mermar las ventas y sobre
+          todo sin poner en riesgo el retorno de inversión.
+        </p>
         <h2 className="text-center subTituloSection">2 modelos de negocio</h2>
         <div className="linea"></div>
         <h2 className="text-left h4 pt-3">Restaurante - SpeakEasy</h2>

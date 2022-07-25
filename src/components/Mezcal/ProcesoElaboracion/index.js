@@ -19,14 +19,15 @@ function ProcesoElaboracion() {
         <p className="text text-center">
           Nuestro proceso de elaboración es de un mezcal ancestral, en el cual
           el agave debe de cocerse por completo en un horno de tierra, además de
-          esto se requiere que el proceso de la fermentación sea en tinas de
-          ayacahuite- y destilarse en alambiques de barro.
+          que el proceso de fermentación se realiza en tinas de ayacahuite- y,
+          posteriormente, debe destilarse en alambiques de barro.
         </p>
 
         <p className="text text-center">
           Nuestro mezcal es 100% natural, sin ningún químico agregado a
-          diferencia de otros destilados y por tanto nunca te causará malestar,
-          incluso por eso le decimos que es virgen ya que no causa cruda.
+          diferencia de otros destilados y, por tanto, nunca te causará ningún
+          tipo de malestar, incluso por eso le decimos que es virgen ya que no
+          causa cruda.
         </p>
         <div>
           <p className="text text-justify">
@@ -37,9 +38,8 @@ function ProcesoElaboracion() {
                 Tepeztate.
               </li>
               <li>
-                Se corta la piña (Tronco corto y grueso del maguey) y se lleva
-                al palenque que se a nuestro palenque que se encuentra en Santa
-                Catarina Minas, Oaxaca.
+                Se corta la piña (Tronco corto y grueso del maguey) y se lleva a
+                nuestro palenque ubicado en Santa Catarina Minas, Oaxaca.
               </li>
               <li>
                 En este momento empieza el proceso de cocción en tierra durante
@@ -51,18 +51,19 @@ function ProcesoElaboracion() {
                 pedazo de tronco.
               </li>
               <li>
-                Posteriormente se pone a fermentar (10 días) con agua los agaves
-                cocidos y triturados.
+                Posteriormente, se pone a fermentar (10 días) los agaves cocidos
+                y triturados con agua.
               </li>
               <li>
-                se destila en un alambique de barro lo que le agrega estas notas
-                de sabor.
+                Se destila en un alambique de barro lo que agrega ciertas notas
+                de sabor que lo hacen único en sus características.
               </li>
+
               <li>
-                Se destila en un alambique de barro lo que le agrega estas notas
-                de sabor.
+                Para que finalmente, el maestro mezcalero, con su historia
+                tradicional que se remonta a generaciones, se encarga de darle
+                la graduación correcta.
               </li>
-              <li>El maestro mezcalero se encarga de darle la graduación.</li>
             </ol>
           </p>
         </div>

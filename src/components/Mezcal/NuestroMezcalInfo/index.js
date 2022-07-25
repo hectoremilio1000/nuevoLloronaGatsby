@@ -27,7 +27,6 @@ function NuestroMezcalInfo() {
 
         <div>
           <p className="text text-justify">
-            Nuestra elección en los agaves:
             <ol>
               <li>
                 Jabalí: el maguey Jabalí es un agave extravagante rojo de hojas
