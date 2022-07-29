@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import FranquiciaInfo from "../components/FranquiciaInfo/index";
 import LayoutLlorona from "../components/LayoutLlorona";
 import TitlebarImageList from "../components/Franquicias/TitlebarImageList/index";
+import FranquiciasFormulario from "../components/Franquicias/FranquiciaFormulario/index";
 
 function Franquicias() {
   return (
@@ -35,14 +36,8 @@ function Franquicias() {
         </div>
       </header>
       <FranquiciaInfo className="mt-2" />
+      <FranquiciasFormulario />
       <TitlebarImageList />
-      <div className="subSubDiv1Banner mb-3">
-        <a href="https://wa.me/+5215549242477">
-          <button type="button" className="buttonComponente">
-            ¡Solicita información ya!
-          </button>
-        </a>
-      </div>
     </LayoutLlorona>
   );
 }
