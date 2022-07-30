@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Button,
   Col,
@@ -10,7 +11,7 @@ import {
   Typography,
   Upload,
 } from "antd";
-import React from "react";
+
 import Section from "../../styles/section";
 const { Title } = Typography;
 const { Item } = Form;
@@ -23,8 +24,9 @@ function FranquiciasFormulario() {
   };
   const onFinish = async values => {
     console.log("esto es imagen", values);
-    message.info(
-      "Información enviada, pronto nos pondremos en contacto contigo"
+    message.success(
+      "Información enviada, pronto nos pondremos en contacto contigo",
+      [4]
     );
   };
 
@@ -32,7 +34,9 @@ function FranquiciasFormulario() {
     <Section className="mt-2">
       <div>
         <h4 className="text-center tituloSection">Quiero Invertir</h4>
-        <h2 className="text-center subTituloSection">Quiero ganar dinero</h2>
+        <h2 className="text-center subTituloSection">
+          gana dinero de forma SEGURA
+        </h2>
       </div>
       <Row>
         <Col xs={23} sm={20} md={20} lg={20}>
@@ -183,12 +187,7 @@ function FranquiciasFormulario() {
             <Item label="¿Tengo dudas?" name="dudas">
               <Input placeholder="Ingresa tu duda" />
             </Item>
-            <Item
-              wrapperCol={{
-                offset: 8,
-                span: 16,
-              }}
-            >
+            <Item>
               <Button type="primary" htmlType="submit">
                 Mandar información
               </Button>

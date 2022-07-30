@@ -24,6 +24,7 @@
     "amplify": "^0.0.11",
     "antd": "^4.21.7",
     "aws-amplify": "^4.3.26",
+    "babel-eslint": "^10.1.0",
     "babel-runtime": "^6.26.0",
     "bootstrap": "4.6",
     "gatsby": "^4.16.0",

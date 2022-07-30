@@ -1,4 +1,22 @@
 {
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lloronabuildback-dev-73309-authRole",
+      "UnauthRoleArn": "arn:aws:iam::900765165512:role/amplify-lloronabuildback-dev-73309-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::900765165512:role/amplify-lloronabuildback-dev-73309-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-lloronabuildback-dev-73309-deployment",
+      "UnauthRoleName": "amplify-lloronabuildback-dev-73309-unauthRole",
+      "StackName": "amplify-lloronabuildback-dev-73309",
+      "StackId": "arn:aws:cloudformation:us-east-2:900765165512:stack/amplify-lloronabuildback-dev-73309/b24f0590-0f10-11ed-90f5-021ac0468a18",
+      "AmplifyAppId": "dd8mp4vcrt8rj"
+    },
+    "categories": {
+      "auth": {
+        "lloronaBuildBack": {}
+      }
+    }
+  },
   "staging": {
     "awscloudformation": {
       "AuthRoleName": "amplify-lloronabuildback-staging-210351-authRole",
