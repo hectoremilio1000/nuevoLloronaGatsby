@@ -1,4 +1,11 @@
-type Franquicias @model @auth(rules: [{allow: public}]) {
+type FranquiciasModel @model @auth(rules: [{allow: public}]) {
   id: ID!
   nombreCompleto: String
+  email: String
+  whatsapp: String
+  ciudad: String
+  montoInversion: Int
+  porqueInvertir: String
+  dudas: String
 }
+ 

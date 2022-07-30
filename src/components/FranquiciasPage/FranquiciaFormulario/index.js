@@ -12,45 +12,67 @@ import {
   Upload,
 } from "antd";
 
+import awsExports from "../../../aws-exports";
+
 import Section from "../../styles/section";
+import { Amplify, DataStore } from "aws-amplify";
+import { FranquiciasModel } from "../../../models";
+
 const { Title } = Typography;
 const { Item } = Form;
 const { Option } = Select;
 const { TextArea } = Input;
 
+Amplify.configure(awsExports);
+
 function FranquiciasFormulario() {
-  const onFinishFailed = async errorInfo => {
-    console.log("Failed:", errorInfo);
-  };
   const onFinish = async values => {
-    console.log("esto es imagen", values);
+    const {
+      nombreCompleto,
+      email,
+      whatsapp,
+      ciudad,
+      montoInversion,
+      porque,
+      dudas,
+    } = values;
+    await DataStore.save(
+      new FranquiciasModel({
+        nombreCompleto: nombreCompleto,
+        email: email,
+        whatsapp: whatsapp,
+        ciudad: ciudad,
+        montoInversion: montoInversion,
+        porqueInvertir: porque,
+        dudas: dudas,
+      })
+    );
+
     message.success(
       "Información enviada, pronto nos pondremos en contacto contigo",
       [4]
     );
+    console.log("objeto creado exitósamente", values);
   };
 
   return (
-    <Section className="mt-2">
-      <div>
+    <Section>
+      <h2 className="text-center h4 text-uppercase">
+        ¿No te alcanza? No te preocupes
+        <br />
+        Intégrate al ¡Pool de Inversionistas!
+      </h2>
+      <div className="linea"></div>
+      <div className="mt-4">
         <h4 className="text-center tituloSection">Quiero Invertir</h4>
-        <h2 className="text-center subTituloSection">
-          gana dinero de forma SEGURA
-        </h2>
+        <h2 className="text-center subTituloSection">de forma SEGURA</h2>
       </div>
-      <Row>
+      <Row justify="center">
         <Col xs={23} sm={20} md={20} lg={20}>
           <Form
-            name=""
-            labelCol={{
-              span: 10,
-            }}
-            wrapperCol={{
-              span: 18,
-            }}
             autoComplete="off"
             onFinish={onFinish}
-            onFinishFailed={onFinishFailed}
+            initialValues={{ montoInversion: 500000 }}
           >
             <Item
               label="Nombre Completo"
@@ -144,7 +166,7 @@ function FranquiciasFormulario() {
             </Item>
             <Item
               label="Monto de inversión"
-              name="Monto inversión"
+              name="montoInversion"
               rules={[
                 {
                   required: true,
@@ -154,7 +176,6 @@ function FranquiciasFormulario() {
             >
               <InputNumber
                 placeholder="Ingresa el monto que quieres invertir"
-                defaultValue={500000}
                 style={{
                   width: "30%",
                 }}

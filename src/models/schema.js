@@ -1,7 +1,7 @@
 export const schema = {
     "models": {
-        "Franquicias": {
-            "name": "Franquicias",
+        "FranquiciasModel": {
+            "name": "FranquiciasModel",
             "fields": {
                 "id": {
                     "name": "id",
@@ -12,6 +12,48 @@ export const schema = {
                 },
                 "nombreCompleto": {
                     "name": "nombreCompleto",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "email": {
+                    "name": "email",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "whatsapp": {
+                    "name": "whatsapp",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "ciudad": {
+                    "name": "ciudad",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "montoInversion": {
+                    "name": "montoInversion",
+                    "isArray": false,
+                    "type": "Int",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "porqueInvertir": {
+                    "name": "porqueInvertir",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "dudas": {
+                    "name": "dudas",
                     "isArray": false,
                     "type": "String",
                     "isRequired": false,
@@ -35,7 +77,7 @@ export const schema = {
                 }
             },
             "syncable": true,
-            "pluralName": "Franquicias",
+            "pluralName": "FranquiciasModels",
             "attributes": [
                 {
                     "type": "model",
@@ -62,5 +104,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "d3ecc39bc8ea9032f11a10170277ef06"
+    "version": "7099d483a60c1b8463ea007ea9d24db4"
 };

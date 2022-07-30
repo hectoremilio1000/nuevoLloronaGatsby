@@ -3,8 +3,8 @@ import { HomeHeader } from "../components/styles/headers";
 import { Link } from "gatsby";
 import FranquiciaInfo from "../components/FranquiciaInfo/index";
 import LayoutLlorona from "../components/LayoutLlorona";
-import TitlebarImageList from "../components/Franquicias/TitlebarImageList/index";
-import FranquiciasFormulario from "../components/Franquicias/FranquiciaFormulario/index";
+import TitlebarImageList from "../components/FranquiciasPage/TitlebarImageList/index";
+import FranquiciasFormulario from "../components/FranquiciasPage/FranquiciaFormulario/index";
 
 function Franquicias() {
   return (

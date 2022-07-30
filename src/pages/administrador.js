@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { HomeHeader } from "../components/styles/headers";
 import { QuickInfoWrapper } from "../components/styles/globalStyles";
 import { Amplify, I18n, Auth } from "aws-amplify";
-import awsExports from "../aws-exports";
+
 import { Button, Container } from "react-bootstrap";
 import { navigate } from "gatsby";
 import {
@@ -33,6 +33,7 @@ I18n.putVocabularies({
   },
 });
 
+import awsExports from "../aws-exports";
 Amplify.configure(awsExports);
 
 function Administrador() {
