@@ -12,7 +12,7 @@ function NuestroMezcalInfo() {
       <div>
         <h4 className="text-center tituloSection">Nuestro Mezcal</h4>
         <h2 className="text-center subTituloSection">
-          Agaves Jabalí & Tepeztate
+          Agaves Coyote, Coyote Cannabis & Jabalí
         </h2>
         <div className="linea"></div>
       </div>
@@ -21,7 +21,7 @@ function NuestroMezcalInfo() {
         <p className="text text-center">
           Preferimos la exclusividad, por tanto decidimos elaborar nuestro
           mezcal con agaves silvestes muy escazos siendo el Jabalí y el
-          Tepeztate nuestra elección por su identidad en sus sabores y facilidad
+          Coyote nuestra elección por su identidad en sus sabores y facilidad
           al paladar.
         </p>
 
@@ -35,11 +35,7 @@ function NuestroMezcalInfo() {
                 requiere poca agua y crece en las barrancas de clima árido.
               </li>
               <li>
-                Tepeztate: es un Agave de la especie Marmorata, su nombre se
-                deriva del vocablo “Tepetl” que en nahuatl significa montaña o
-                monte, sin duda hace referencia donde se puede encontrar este
-                agave, ya que generalmente se le encuentra en acantilados en el
-                monte.
+                Coyote: Los maestros mezcaleros coinciden que es un maguey escurridizo como un “coyote” de ahí viene el origen de su nombre común.
               </li>
             </ol>
           </p>

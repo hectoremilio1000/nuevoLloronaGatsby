@@ -59,16 +59,16 @@ const itemData = [
     featured: true,
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_0027.jpg",
-    title: "Nuestra botella",
-  },
-  {
     img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_0043.jpg",
-    title: "Cual prefieres Jabalí o Tepeztate",
+    title: "Nuestra botella Calavera",
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9975.jpg",
-    title: "La pasión por el mezcal nos caracteriza",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/mezcal+cannabis+llorona.jpg",
+    title: "Coyote con Cannabis",
+  },
+  {
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/foto+botella+calaca+mezcal+abbywood.JPG",
+    title: "La pasión nos une AbbyWoo",
     cols: 2,
   },
 ];

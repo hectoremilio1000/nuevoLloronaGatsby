@@ -1,3 +1,23 @@
+enum TypeInventory {
+  ADD
+  REMOVE
+  STOCKINITIAL
+}
+
+type StockEvents @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  type: TypeInventory
+  qty: Float
+  fecha: String
+  productsID: ID! @index(name: "byProducts")
+}
+
+type Products @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  StockEvents: [StockEvents] @hasMany(indexName: "byProducts", fields: ["id"])
+}
+
 type FranquiciasModel @model @auth(rules: [{allow: public}]) {
   id: ID!
   nombreCompleto: String

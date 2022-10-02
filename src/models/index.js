@@ -1,7 +1,18 @@
 // @ts-check
-import { initSchema } from "@aws-amplify/datastore";
-import { schema } from "./schema";
+import { initSchema } from '@aws-amplify/datastore';
+import { schema } from './schema';
 
-const { FranquiciasModel } = initSchema(schema);
+const TypeInventory = {
+  "ADD": "ADD",
+  "REMOVE": "REMOVE",
+  "STOCKINITIAL": "STOCKINITIAL"
+};
 
-export { FranquiciasModel };
+const { StockEvents, Products, FranquiciasModel } = initSchema(schema);
+
+export {
+  StockEvents,
+  Products,
+  FranquiciasModel,
+  TypeInventory
+};

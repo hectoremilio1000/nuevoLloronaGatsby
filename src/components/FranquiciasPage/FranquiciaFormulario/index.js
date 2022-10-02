@@ -26,6 +26,7 @@ const { TextArea } = Input;
 Amplify.configure(awsExports);
 
 function FranquiciasFormulario() {
+  const [form] = Form.useForm();
   const onFinish = async values => {
     const {
       nombreCompleto,
@@ -53,6 +54,7 @@ function FranquiciasFormulario() {
       [4]
     );
     console.log("objeto creado exitósamente", values);
+    form.resetFields();
   };
 
   return (
@@ -70,6 +72,7 @@ function FranquiciasFormulario() {
       <Row justify="center">
         <Col xs={23} sm={20} md={20} lg={20}>
           <Form
+            form={form}
             autoComplete="off"
             onFinish={onFinish}
             initialValues={{ montoInversion: 500000 }}

@@ -76,8 +76,8 @@ const itemData = [
     title: "novios",
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/nina2pinata.JPG",
-    title: "cumple",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/IMG_8759.jpg",
+    title: "Botella Mezcal Madre Cuishe",
   },
   {
     img: "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/ninas4pinata.JPG",

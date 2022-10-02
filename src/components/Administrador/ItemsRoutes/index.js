@@ -41,6 +41,9 @@ const itemsRoutes = [
     getItem("Crear Inventario", "1", <HighlightOutlined />),
     getItem("Revisar Inventario", "2", <UnorderedListOutlined />),
   ]),
+  getItem("Inventario", "sub2", <AppstoreOutlined />, [
+    getItem("Inventario", "3", <HighlightOutlined />),
+  ]),
   //   getItem("Doctores", "sub2", <MedicineBoxOutlined />, [
   //     getItem("Crear Doctor", "3", <BranchesOutlined />),
   //     getItem("Lista Doctores", "4", <ContactsOutlined />),

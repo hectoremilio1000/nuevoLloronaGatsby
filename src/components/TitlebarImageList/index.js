@@ -7,8 +7,10 @@ import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
 import Title from "../Title";
 import Section from "../styles/section";
+import itemData from "../../data/HomeData/itemData";
 
 export default function TitlebarImageList() {
+  console.log(itemData)
   return (
     <Section>
       <div>
@@ -43,37 +45,4 @@ export default function TitlebarImageList() {
   );
 }
 
-const itemData = [
-  {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/hamburguesa_resistir_2_insta.JPG",
-    title: "Hamburguesa de tocino",
-    rows: 2,
-    cols: 2,
-    featured: true,
-  },
-  {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/HAMBURGUESA_CAMARON_BBQ+copy.JPG",
-    title: "Hamburguesa de camarón",
-  },
-  {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/bbq2reducidatamano.jpg",
-    title: "BBQ casa",
-  },
-  {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/hamburguesahuevo.jpg",
-    title: "DON HUEVO",
-    cols: 2,
-  },
-  {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/pizza_margarita_insta.jpg",
-    title: "Pizza margarita",
-    cols: 2,
-  },
-  {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/mazapan.jpeg",
-    title: "Martiní de Mazapán",
-    rows: 2,
-    cols: 2,
-    featured: true,
-  },
-];
+

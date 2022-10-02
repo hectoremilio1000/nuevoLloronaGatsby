@@ -23,6 +23,7 @@ module.exports = {
         trackingId: "297118616",
       },
     },
+
     "gatsby-plugin-sitemap",
     "gatsby-plugin-antd",
   ],

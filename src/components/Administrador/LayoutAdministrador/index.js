@@ -5,6 +5,7 @@ import itemsRoutes from "../ItemsRoutes/index";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import CrearInventario from "../Cervezas/CrearInventario/index";
 import RevisarInventario from "../Cervezas/RevisarInventario/index";
+import InventarioNuevo from "../InventarioNuevo";
 
 const { Sider, Header, Content } = Layout;
 
@@ -74,6 +75,10 @@ function LayoutAdministrador({ signOut }) {
                 style={{ minHeight: 100 }}
               >
                 <RevisarInventario />
+              </div>
+            ) : current === "3" ? (
+              <div className="site-layout-bckground" style={{ minHeight: 100 }}>
+                <InventarioNuevo />
               </div>
             ) : (
               <div style={{}}></div>
