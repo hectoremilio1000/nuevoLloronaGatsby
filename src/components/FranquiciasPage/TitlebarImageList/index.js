@@ -58,12 +58,12 @@ const itemData = [
     title: "Diseño industrial contrastando con una terraza floral",
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0067.jpg",
-    title: "Piñata cumpleañera",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/menu%CC%81Veggie.jpg",
+    title: "Menú Veggie",
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0069.jpg",
-    title: "Pizzas italianas auténticas",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/mixologi%CC%81a+autor.jpg",
+    title: "Mixología de autor",
     cols: 2,
   },
   {

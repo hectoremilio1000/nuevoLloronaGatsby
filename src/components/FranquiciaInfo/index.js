@@ -13,8 +13,8 @@ function FranquiciaInfo() {
         <h1 className="text-center font-weight-bold">Franquicias LLorona</h1>
       </div>
       <div>
-        <h4 className="text-center tituloSection">Modelo</h4>
-        <h2 className="text-center subTituloSection">Único</h2>
+        <h4 className="text-center tituloSection">Te garantizamos</h4>
+        <h2 className="text-center subTituloSection">Retornos de Inversión de 1 año</h2>
         <div className="linea"></div>
       </div>
 

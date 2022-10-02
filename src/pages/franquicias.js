@@ -13,10 +13,10 @@ function Franquicias() {
       <header
         className="col jumbotron-fluid pt-5"
         style={{
-          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/lugarAfuera.jpg")`,
+          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/banner/IMG_8775.jpg")`,
           backgroundSize: "cover",
-          height: "80vh",
-          backgroundPosition: "center",
+          height: "90vh",
+          backgroundPosition: "top",
         }}
       >
         <div className="d-flex ">
