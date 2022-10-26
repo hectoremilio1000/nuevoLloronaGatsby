@@ -1,4 +1,4 @@
-import { ModelInit, MutableModel, PersistentModelConstructor } from "@aws-amplify/datastore";
+import { ModelInit, MutableModel } from "@aws-amplify/datastore";
 
 export enum TypeInventory {
   ADD = "ADD",
@@ -6,7 +6,13 @@ export enum TypeInventory {
   STOCKINITIAL = "STOCKINITIAL"
 }
 
+type StockEventInventarioMetaData = {
+  readOnlyFields: 'createdAt' | 'updatedAt';
+}
 
+type InventarioMetaData = {
+  readOnlyFields: 'createdAt' | 'updatedAt';
+}
 
 type StockEventsMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
@@ -18,6 +24,32 @@ type ProductsMetaData = {
 
 type FranquiciasModelMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
+}
+
+export declare class StockEventInventario {
+  readonly id: string;
+  readonly type?: TypeInventory | keyof typeof TypeInventory | null;
+  readonly quantity?: string | null;
+  readonly fecha?: string | null;
+  readonly inventarioID: string;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+  constructor(init: ModelInit<StockEventInventario, StockEventInventarioMetaData>);
+  static copyOf(source: StockEventInventario, mutator: (draft: MutableModel<StockEventInventario, StockEventInventarioMetaData>) => MutableModel<StockEventInventario, StockEventInventarioMetaData> | void): StockEventInventario;
+}
+
+export declare class Inventario {
+  readonly id: string;
+  readonly inventarioInicialFisico?: string | null;
+  readonly inventarioFinalFisico?: string | null;
+  readonly fechaInicioConteoFisico?: string | null;
+  readonly fechaFinConteoFisico?: string | null;
+  readonly productsID: string;
+  readonly StockEventInventarios?: (StockEventInventario | null)[] | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+  constructor(init: ModelInit<Inventario, InventarioMetaData>);
+  static copyOf(source: Inventario, mutator: (draft: MutableModel<Inventario, InventarioMetaData>) => MutableModel<Inventario, InventarioMetaData> | void): Inventario;
 }
 
 export declare class StockEvents {
@@ -36,6 +68,7 @@ export declare class Products {
   readonly id: string;
   readonly name?: string | null;
   readonly StockEvents?: (StockEvents | null)[] | null;
+  readonly Inventarios?: (Inventario | null)[] | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   constructor(init: ModelInit<Products, ProductsMetaData>);

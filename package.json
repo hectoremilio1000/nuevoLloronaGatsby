@@ -26,6 +26,7 @@
     "aws-amplify": "^4.3.26",
     "axios": "^0.27.2",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^2.0.7",
     "babel-runtime": "^6.26.0",
     "bootstrap": "4.6",
     "gatsby": "^4.16.0",
@@ -33,6 +34,7 @@
     "gatsby-plugin-google-analytics": "^4.16.0",
     "gatsby-plugin-manifest": "^4.16.0",
     "gatsby-plugin-sitemap": "^5.16.0",
+    "gatsby-plugin-styled-components": "^5.24.0",
     "global": "^4.4.0",
     "jquery": "^3.6.0",
     "js-search": "^2.0.0",
@@ -42,6 +44,6 @@
     "react-calendly": "^4.0.1",
     "react-dom": "^18.1.0",
     "react-icons": "^4.4.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.6"
   }
 }

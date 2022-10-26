@@ -3,6 +3,13 @@
   align-items: start;
 }
 
+.bannerCantina{
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/cantina/bannerCantina.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: top;    
+}
+
 .LloronaNombre {
   text-align: center !important;
   font-size: 36px !important;
@@ -191,6 +198,14 @@ ul {
 }
 
 @media (max-width: 500px) {
+
+  .bannerCantina{
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/cantina/bannerCantina500x1000.jpg") !important;
+  background-size: cover !important;
+  height: 90vh !important;
+  background-position: center !important;    
+}
+
   .boton_orina {
     margin-top: 2.4rem !important;
   }
@@ -199,6 +214,8 @@ ul {
     display: flex;
     align-items: center;
   }
+
+  
 
   /* Calendario*/
   .tituloCalendario {

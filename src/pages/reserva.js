@@ -16,6 +16,27 @@ export default function Reserva() {
   return (
     <LayoutLlorona>
       <HomeHeader />
+       <header
+        className="col jumbotron-fluid pt-5"
+        style={{
+          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG")`,
+          backgroundSize: "cover",
+          height: "100vh",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="d-flex ">
+          <div className="subDiv2Banner">
+            <h3 className=" font-weight-bold proximamente2 text-white">
+              <b>Los jueves piñata cumpleañera con una botella de mezcal</b>
+            </h3>
+
+            <div className="subSubDiv1Banner">
+             
+            </div>
+          </div>
+        </div>
+      </header>
       <Calendario />
       <Section>
         <div>
@@ -65,8 +86,8 @@ export default function Reserva() {
 
 const itemData = [
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG",
-    title: "Piñata",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/nina2pinata.JPG",
+    title: "Piñata cumpleañera",
     rows: 2,
     cols: 2,
     featured: true,
@@ -76,8 +97,8 @@ const itemData = [
     title: "novios",
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/IMG_8759.jpg",
-    title: "Botella Mezcal Madre Cuishe",
+    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/IMG_9585.jpg",
+    title: "Pierde almas",
   },
   {
     img: "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/ninas4pinata.JPG",

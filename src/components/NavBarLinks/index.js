@@ -37,7 +37,11 @@ export default class NavbarLinks extends Component {
       },
       {
         id: 5,
-
+        path: "/cantina",
+        name: "Cantina",
+      },
+      {
+        id: 6,
         path: "/administrador",
         name: "Administrador",
       },

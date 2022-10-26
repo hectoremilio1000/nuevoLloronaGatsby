@@ -1,3 +1,21 @@
+type StockEventInventario @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  type: TypeInventory
+  quantity: String
+  fecha: String
+  inventarioID: ID! @index(name: "byInventario")
+}
+
+type Inventario @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  inventarioInicialFisico: String
+  inventarioFinalFisico: String
+  fechaInicioConteoFisico: String
+  fechaFinConteoFisico: String
+  productsID: ID! @index(name: "byProducts")
+  StockEventInventarios: [StockEventInventario] @hasMany(indexName: "byInventario", fields: ["id"])
+}
+
 enum TypeInventory {
   ADD
   REMOVE
@@ -16,6 +34,7 @@ type Products @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String
   StockEvents: [StockEvents] @hasMany(indexName: "byProducts", fields: ["id"])
+  Inventarios: [Inventario] @hasMany(indexName: "byProducts", fields: ["id"])
 }
 
 type FranquiciasModel @model @auth(rules: [{allow: public}]) {

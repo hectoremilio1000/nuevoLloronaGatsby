@@ -1,4 +1,22 @@
 {
+  "inventary": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lloronabuildback-inventary-01657-authRole",
+      "UnauthRoleArn": "arn:aws:iam::900765165512:role/amplify-lloronabuildback-inventary-01657-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::900765165512:role/amplify-lloronabuildback-inventary-01657-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-lloronabuildback-inventary-01657-deployment",
+      "UnauthRoleName": "amplify-lloronabuildback-inventary-01657-unauthRole",
+      "StackName": "amplify-lloronabuildback-inventary-01657",
+      "StackId": "arn:aws:cloudformation:us-east-2:900765165512:stack/amplify-lloronabuildback-inventary-01657/b1e9f2d0-42b0-11ed-a499-0ac54b50d216",
+      "AmplifyAppId": "dd8mp4vcrt8rj"
+    },
+    "categories": {
+      "auth": {
+        "lloronaBuildBack": {}
+      }
+    }
+  },
   "newdev": {
     "awscloudformation": {
       "AuthRoleName": "amplify-lloronabuildback-newdev-20659-authRole",
@@ -27,24 +45,6 @@
       "UnauthRoleName": "amplify-lloronabuildback-dev-73309-unauthRole",
       "StackName": "amplify-lloronabuildback-dev-73309",
       "StackId": "arn:aws:cloudformation:us-east-2:900765165512:stack/amplify-lloronabuildback-dev-73309/b24f0590-0f10-11ed-90f5-021ac0468a18",
-      "AmplifyAppId": "dd8mp4vcrt8rj"
-    },
-    "categories": {
-      "auth": {
-        "lloronaBuildBack": {}
-      }
-    }
-  },
-  "staging": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-lloronabuildback-staging-210351-authRole",
-      "UnauthRoleArn": "arn:aws:iam::900765165512:role/amplify-lloronabuildback-staging-210351-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::900765165512:role/amplify-lloronabuildback-staging-210351-authRole",
-      "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-lloronabuildback-staging-210351-deployment",
-      "UnauthRoleName": "amplify-lloronabuildback-staging-210351-unauthRole",
-      "StackName": "amplify-lloronabuildback-staging-210351",
-      "StackId": "arn:aws:cloudformation:us-east-2:900765165512:stack/amplify-lloronabuildback-staging-210351/282a9360-ef4a-11ec-a920-06889685f228",
       "AmplifyAppId": "dd8mp4vcrt8rj"
     },
     "categories": {

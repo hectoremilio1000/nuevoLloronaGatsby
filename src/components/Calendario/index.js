@@ -3,7 +3,7 @@ import { InlineWidget } from "react-calendly";
 
 export default function Calendario() {
   return (
-    <div id="reserva" className="mt-4">
+    <div id="reserva">
       <section className="containerCalendario">
         <div className="subcontainerCalendario">
           <h1 className="text-center tituloCalendario">

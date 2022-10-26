@@ -4,16 +4,16 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import ImagenMenu from "../ImagenMenu";
 
-import menuCantinero from "../../../data/imagenes/MenuIngles/menucantinerofrente150322inglesnuevofinal.jpg";
+import menuCantinero from "../../../data/imagenes/MenuIngles/menucantinerofrente061022INGLES.jpg";
 import menuHamburguesas from "../../../data/imagenes/MenuIngles/menu_hamburguesa ingles150122.jpg";
-import menuMixologia from "../../../data/imagenes/MenuIngles/mixologianuevo150322ingles.jpg";
+import menuMixologia from "../../../data/imagenes/MenuIngles/mixologianuevo061022INGLES-2.jpg";
 import menuTacos from "../../../data/imagenes/MenuIngles/tacosmenuingles020622.jpg";
 import menuPizzas from "../../../data/imagenes/MenuIngles/menupizzaingles240622.jpg";
 import menuVeggie from "../../../data/imagenes/MenuIngles/menuveggie240622INGLES.jpg";
-import menuBebidas1 from "../../../data/imagenes/MenuIngles/MENUDESTILADOSJUNIO2022NUEVOINGLES-1.jpg";
-import menuBebidas2 from "../../../data/imagenes/MenuIngles/MENUDESTILADOSJUNIO2022NUEVOINGLES-2.jpg";
-import menuBebidas3 from "../../../data/imagenes/MenuIngles/MENUDESTILADOSJUNIO2022NUEVOINGLES-3.jpg";
-import menuBebidas4 from "../../../data/imagenes/MenuIngles/MENUDESTILADOSJUNIO2022NUEVOINGLES-4.jpg";
+import menuBebidas1 from "../../../data/imagenes/MenuEspanol/destilados octubre 2022-1.jpg";
+import menuBebidas2 from "../../../data/imagenes/MenuEspanol/destilados octubre 2022-2.jpg";
+import menuBebidas3 from "../../../data/imagenes/MenuEspanol/destilados octubre 2022-3.jpg";
+import menuBebidas4 from "../../../data/imagenes/MenuEspanol/destilados octubre 2022-4.jpg";
 
 function MenuInlges() {
   return (
@@ -27,7 +27,7 @@ function MenuInlges() {
       <Tabs
         defaultActiveKey="pizzas"
         id="uncontrolled-tab-example"
-        className="mb-3"
+        className="mb-3 mt-3"
       >
         <Tab eventKey="home" title="Burgers">
           <ImagenMenu src={menuHamburguesas} />

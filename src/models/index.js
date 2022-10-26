@@ -8,9 +8,11 @@ const TypeInventory = {
   "STOCKINITIAL": "STOCKINITIAL"
 };
 
-const { StockEvents, Products, FranquiciasModel } = initSchema(schema);
+const { StockEventInventario, Inventario, StockEvents, Products, FranquiciasModel } = initSchema(schema);
 
 export {
+  StockEventInventario,
+  Inventario,
   StockEvents,
   Products,
   FranquiciasModel,
