@@ -7,6 +7,8 @@ import CrearInventario from "../Cervezas/CrearInventario/index";
 import RevisarInventario from "../Cervezas/RevisarInventario/index";
 import InventarioNuevo from "../InventarioNuevo";
 import InventarioProductos from '../PruebaInventario/InventarioProductos';
+import ListaHoteles from '../Hoteles/ListaHoteles';
+import CrearHotel from '../Hoteles/CrearHotel';
 
 const { Sider, Header, Content } = Layout;
 
@@ -84,6 +86,14 @@ function LayoutAdministrador({ signOut }) {
             ) : current === "4" ? (
               <div className="site-layout-bckground" style={{ minHeight: 100 }}>
                 <InventarioProductos />
+              </div>
+            ) : current === "5" ? (
+              <div className="site-layout-bckground" style={{ minHeight: 100 }}>
+                <ListaHoteles />
+              </div>
+            ) : current === "6" ? (
+              <div className="site-layout-bckground" style={{ minHeight: 100 }}>
+                <CrearHotel />
               </div>
             ) : (
               <div style={{}}></div>

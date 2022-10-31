@@ -10,7 +10,7 @@ import Section from "../styles/section";
 import itemData from "../../data/HomeData/itemData";
 
 export default function TitlebarImageList() {
-  console.log(itemData)
+
   return (
     <Section>
       <div>

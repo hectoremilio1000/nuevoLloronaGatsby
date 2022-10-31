@@ -6,6 +6,10 @@ export enum TypeInventory {
   STOCKINITIAL = "STOCKINITIAL"
 }
 
+type HotelMetaData = {
+  readOnlyFields: 'createdAt' | 'updatedAt';
+}
+
 type StockEventInventarioMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
 }
@@ -24,6 +28,20 @@ type ProductsMetaData = {
 
 type FranquiciasModelMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
+}
+
+export declare class Hotel {
+  readonly id: string;
+  readonly nombre?: string | null;
+  readonly direccionCompleta?: string | null;
+  readonly visitado?: string | null;
+  readonly visitaRecepcionista?: string | null;
+  readonly mandoClientes?: string | null;
+  readonly fechaVisita?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+  constructor(init: ModelInit<Hotel, HotelMetaData>);
+  static copyOf(source: Hotel, mutator: (draft: MutableModel<Hotel, HotelMetaData>) => MutableModel<Hotel, HotelMetaData> | void): Hotel;
 }
 
 export declare class StockEventInventario {

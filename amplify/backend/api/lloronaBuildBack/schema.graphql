@@ -1,3 +1,13 @@
+type Hotel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  nombre: String
+  direccionCompleta: String
+  visitado: String
+  visitaRecepcionista: String
+  mandoClientes: String
+  fechaVisita: String
+}
+
 type StockEventInventario @model @auth(rules: [{allow: public}]) {
   id: ID!
   type: TypeInventory
