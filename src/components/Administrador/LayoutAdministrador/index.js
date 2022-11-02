@@ -9,6 +9,7 @@ import InventarioNuevo from "../InventarioNuevo";
 import InventarioProductos from '../PruebaInventario/InventarioProductos';
 import ListaHoteles from '../Hoteles/ListaHoteles';
 import CrearHotel from '../Hoteles/CrearHotel';
+import CrearProductoPrueba from '../PruebaInventario/CrearProductoPrueba';
 
 const { Sider, Header, Content } = Layout;
 
@@ -96,13 +97,17 @@ function LayoutAdministrador({ signOut }) {
               </div>
             ) : current === "3" ? (
               <div className="site-layout-bckground" style={{ minHeight: 100 }}>
-                <InventarioNuevo />
+                {/* <InventarioNuevo /> */}
               </div>
             ) : current === "4" ? (
               <div className="site-layout-bckground" style={{ minHeight: 100 }}>
                 <InventarioProductos />
               </div>
             ) : current === "5" ? (
+              <div className="site-layout-bckground" style={{ minHeight: 100 }}>
+                <CrearProductoPrueba />
+              </div>
+            ) : current === "6" ? (
               <div className="site-layout-bckground" style={{ minHeight: 100 }}>
                 <ListaHoteles />
               </div>

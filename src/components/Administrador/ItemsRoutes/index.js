@@ -46,11 +46,12 @@ const itemsRoutes = [
   ]),
   getItem("InventarioPrueba", "sub3", <AppstoreOutlined />, [
     getItem("Inventario", "4", <HighlightOutlined />),
+    getItem("Crear Producto", "5", <UnorderedListOutlined />),
   ]),
   ,
   getItem("Hoteles", "sub4", <AppstoreOutlined />, [
-    getItem("Lista Hoteles", "5", <HighlightOutlined />),
-    getItem("Crear Hotel", "6", <HighlightOutlined />),
+    getItem("Lista Hoteles", "6", <HighlightOutlined />),
+    getItem("Crear Hotel", "7", <HighlightOutlined />),
   ]),
   //   getItem("Doctores", "sub2", <MedicineBoxOutlined />, [
   //     getItem("Crear Doctor", "3", <BranchesOutlined />),
