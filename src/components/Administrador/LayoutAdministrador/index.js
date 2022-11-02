@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Layout, Menu } from "antd";
 import { Button } from "react-bootstrap";
 import itemsRoutes from "../ItemsRoutes/index";
@@ -22,6 +22,21 @@ function LayoutAdministrador({ signOut }) {
   const cambiarComponent = e => {
     setCurrent(e.key);
   };
+
+  const clearCacheData = () => {
+    caches.keys().then(names => {
+      names.forEach(name => {
+        caches.delete(name);
+      });
+    });
+    console.log("Complete Cache Cleared");
+  };
+
+
+  useEffect(() => {
+  clearCacheData();
+  }, [])
+  
   return (
     <>
       <Layout>

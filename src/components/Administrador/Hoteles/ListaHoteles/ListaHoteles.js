@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { DataStore, Predicates } from "aws-amplify";
+import { Amplify, Hub } from "@aws-amplify/core";
+import { DataStore, Predicates } from "@aws-amplify/datastore";
 import { Hotel } from "../../../../models";
 import { Card, Spin, Table } from "antd";
 import { navigate } from 'gatsby';
@@ -7,19 +8,31 @@ import { Match } from "@reach/router"
 
 function ListaHoteles() {
   const [hoteles, setHoteles] = useState([]);
-  const [showSpin, setShowSpin] = useState(false);
+  const [showSpin, setShowSpin] = useState(true);
 
   const fetchHotels = async () => {
-    const Hotels = await DataStore.query(Hotel);
-    setHoteles(Hotels);
-    setShowSpin(true)
-  };
+    try {
+       const Hotels = await DataStore.query(Hotel);
+       setHoteles(Hotels);
+       setShowSpin(false);
+    } catch (error) {
+      console.log(error)
+    }
+   
+  }
 
   useEffect(() => {
-    setShowSpin(false);
-    fetchHotels();
+    setShowSpin(true);
+  fetchHotels();
+  DataStore.observe(Hotel).subscribe(fetchHotels)
+}, [])
+
+ 
+  
+   
+
     
-  }, [])
+    
 
   console.log(hoteles)
   
@@ -65,7 +78,7 @@ function ListaHoteles() {
 
   return (
     <div style={{ width: "100%" }}>
-      {!showSpin ? (
+      {showSpin ? (
         <Spin size="large" />
       ) : (
         <Table
