@@ -100,7 +100,7 @@ function Hoteles({ id }) {
       })
     );
     setHotel(updateHotel);
-    window.location.reload(false);
+    // window.location.reload(false);
   };
 
   const guardarDireccion = async () => {
@@ -110,7 +110,7 @@ function Hoteles({ id }) {
       })
     );
     setHotel(updateHotel);
-    window.location.reload(false);
+    // window.location.reload(false);
   };
 
   //visitado
@@ -125,7 +125,7 @@ function Hoteles({ id }) {
       })
     );
     setHotel(updateHotel);
-    window.location.reload(false);
+    // window.location.reload(false);
   };
 
   //guardar Fecha Visita
@@ -139,7 +139,7 @@ const guardarFechaVisita = async () => {
     })
   );
   setHotel(updateHotel);
-  window.location.reload(false);
+  // window.location.reload(false);
 };
 
 
@@ -156,7 +156,7 @@ const guardarFechaVisita = async () => {
       })
     );
     setHotel(updateHotel);
-    window.location.reload(false);
+    // window.location.reload(false);
   };
 
   //guardar mandado Clientes
@@ -172,7 +172,7 @@ const guardarFechaVisita = async () => {
       })
     );
     setHotel(updateHotel);
-    window.location.reload(false);
+    // window.location.reload(false);
   };
 
 
