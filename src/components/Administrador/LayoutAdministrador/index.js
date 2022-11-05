@@ -111,7 +111,7 @@ function LayoutAdministrador({ signOut }) {
               <div className="site-layout-bckground" style={{ minHeight: 100 }}>
                 <ListaHoteles />
               </div>
-            ) : current === "6" ? (
+            ) : current === "7" ? (
               <div className="site-layout-bckground" style={{ minHeight: 100 }}>
                 <CrearHotel />
               </div>

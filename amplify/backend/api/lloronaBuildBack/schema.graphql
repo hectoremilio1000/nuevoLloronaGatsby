@@ -1,3 +1,9 @@
+enum TIPOTOTAL {
+  SOBRANTE
+  FALTANTE
+  CUADRA
+}
+
 type Hotel @model @auth(rules: [{allow: public}]) {
   id: ID!
   nombre: String
@@ -14,6 +20,7 @@ type StockEventInventario @model @auth(rules: [{allow: public}]) {
   quantity: String
   fecha: String
   inventarioID: ID! @index(name: "byInventario")
+  totalCompras: String
 }
 
 type Inventario @model @auth(rules: [{allow: public}]) {
@@ -24,6 +31,10 @@ type Inventario @model @auth(rules: [{allow: public}]) {
   fechaFinConteoFisico: String
   productsID: ID! @index(name: "byProducts")
   StockEventInventarios: [StockEventInventario] @hasMany(indexName: "byInventario", fields: ["id"])
+  ventas: String
+  compras: String
+  total: String
+  tipoTotal: TIPOTOTAL
 }
 
 enum TypeInventory {

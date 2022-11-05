@@ -134,6 +134,13 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
+                "totalCompras": {
+                    "name": "totalCompras",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
                 "createdAt": {
                     "name": "createdAt",
                     "isArray": false,
@@ -243,6 +250,36 @@ export const schema = {
                         "connectionType": "HAS_MANY",
                         "associatedWith": "inventarioID"
                     }
+                },
+                "ventas": {
+                    "name": "ventas",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "compras": {
+                    "name": "compras",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "total": {
+                    "name": "total",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "tipoTotal": {
+                    "name": "tipoTotal",
+                    "isArray": false,
+                    "type": {
+                        "enum": "Tipototal"
+                    },
+                    "isRequired": false,
+                    "attributes": []
                 },
                 "createdAt": {
                     "name": "createdAt",
@@ -576,6 +613,14 @@ export const schema = {
         }
     },
     "enums": {
+        "Tipototal": {
+            "name": "Tipototal",
+            "values": [
+                "SOBRANTE",
+                "FALTANTE",
+                "CUADRA"
+            ]
+        },
         "TypeInventory": {
             "name": "TypeInventory",
             "values": [
@@ -587,5 +632,5 @@ export const schema = {
     },
     "nonModels": {},
     "codegenVersion": "3.3.1",
-    "version": "d71b3a2f598863cd582951f09a69198d"
+    "version": "3be9d43663d675ea75d3ce1f75530741"
 };

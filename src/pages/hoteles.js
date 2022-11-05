@@ -316,4 +316,4 @@ const guardarFechaVisita = async () => {
   );
 }
 
-export default Hoteles
+export default Hoteles;

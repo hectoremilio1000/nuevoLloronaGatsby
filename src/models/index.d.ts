@@ -2,6 +2,12 @@ import { ModelInit, MutableModel } from "@aws-amplify/datastore";
 // @ts-ignore
 import { LazyLoading, LazyLoadingDisabled, AsyncCollection } from "@aws-amplify/datastore";
 
+export enum Tipototal {
+  SOBRANTE = "SOBRANTE",
+  FALTANTE = "FALTANTE",
+  CUADRA = "CUADRA"
+}
+
 export enum TypeInventory {
   ADD = "ADD",
   REMOVE = "REMOVE",
@@ -68,6 +74,7 @@ type EagerStockEventInventario = {
   readonly quantity?: string | null;
   readonly fecha?: string | null;
   readonly inventarioID: string;
+  readonly totalCompras?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -78,6 +85,7 @@ type LazyStockEventInventario = {
   readonly quantity?: string | null;
   readonly fecha?: string | null;
   readonly inventarioID: string;
+  readonly totalCompras?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -96,6 +104,10 @@ type EagerInventario = {
   readonly fechaFinConteoFisico?: string | null;
   readonly productsID: string;
   readonly StockEventInventarios?: (StockEventInventario | null)[] | null;
+  readonly ventas?: string | null;
+  readonly compras?: string | null;
+  readonly total?: string | null;
+  readonly tipoTotal?: Tipototal | keyof typeof Tipototal | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -108,6 +120,10 @@ type LazyInventario = {
   readonly fechaFinConteoFisico?: string | null;
   readonly productsID: string;
   readonly StockEventInventarios: AsyncCollection<StockEventInventario>;
+  readonly ventas?: string | null;
+  readonly compras?: string | null;
+  readonly total?: string | null;
+  readonly tipoTotal?: Tipototal | keyof typeof Tipototal | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

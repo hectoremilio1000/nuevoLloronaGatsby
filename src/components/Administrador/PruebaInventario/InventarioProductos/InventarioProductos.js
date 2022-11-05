@@ -3,6 +3,7 @@ import { DataStore, Hub, Predicates } from "aws-amplify";
 import React, { useState, useEffect } from "react";
 import { Inventario, StockEvents } from '../../../../models';
 import { Products } from '../../../../models';
+import { navigate } from "gatsby";
 
 
 function InventarioProductos() {
@@ -21,6 +22,8 @@ try {
 } catch (error) {
   console.log(error)
 }
+    
+   
 
    
     
@@ -77,7 +80,10 @@ try {
 
   return (
     <div>
-      {showSpin ? <Spin size="large" /> : <Table columns={columns} dataSource={ products} rowKey="id"/>}
+      {showSpin ? <Spin size="large" /> :
+        <Table columns={columns} dataSource={products} rowKey="id" onRow={producto => ({
+          onClick: () => navigate(`producto/${producto.id}`, {replace:true})
+        })}/>}
 
       {/* {products && <>
         {products.map((product => {
