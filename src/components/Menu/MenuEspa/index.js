@@ -4,12 +4,12 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import ImagenMenu from "../ImagenMenu";
 
-import menuCantinero from "../../../data/imagenes/MenuEspanol/menucantinerofrente02082022.jpg";
-import menuHamburguesas from "../../../data/imagenes/MenuEspanol/menuhamburguesas230622.jpg";
-import menuMixologia from "../../../data/imagenes/MenuEspanol/mixologianuevo02082022_page-0001.jpg";
+import menuCantinero from "../../../data/imagenes/MenuEspanol/menucantinerofrente21102022.jpg";
+import menuHamburguesas from "../../../data/imagenes/MenuEspanol/menuhamburguesas051022.jpg";
+import menuMixologia from "../../../data/imagenes/MenuEspanol/mixologianuevo18102022.jpg";
 import menuTacos from "../../../data/imagenes/MenuEspanol/tacosmenu100222.jpg";
-import menuPizzas from "../../../data/imagenes/MenuEspanol/menupizza160622.jpg";
-import menuVeggie from "../../../data/imagenes/MenuEspanol/menuveggie170622.jpg";
+import menuPizzas from "../../../data/imagenes/MenuEspanol/menupizza051022.jpg";
+import menuVeggie from "../../../data/imagenes/MenuEspanol/menuveggie051022.jpg";
 import menuBebidas1 from "../../../data/imagenes/MenuEspanol/destilados octubre 2022-1.jpg";
 import menuBebidas2 from "../../../data/imagenes/MenuEspanol/destilados octubre 2022-2.jpg";
 import menuBebidas3 from "../../../data/imagenes/MenuEspanol/destilados octubre 2022-3.jpg";

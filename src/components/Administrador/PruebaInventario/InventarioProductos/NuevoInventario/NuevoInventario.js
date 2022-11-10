@@ -61,7 +61,10 @@ function NuevoInventario({ productoID }) {
         />
       </Item>
       <Card title="Compras">
-        <Item label="Ingresa la cantidad de la compra que corresponde al período, ve guardando una por una">
+        
+        
+        
+        {/* <Item label="Ingresa la cantidad de la compra que corresponde al período, ve guardando una por una">
           <Input
             onChange={e => setCantidad(e.target.value)}
             value={cantidad}
@@ -73,7 +76,7 @@ function NuevoInventario({ productoID }) {
         </Item>
         <Item>
           <Button type="default">Guardar compra</Button>
-        </Item>
+        </Item> */}
       </Card>
       <Item>
         <Button type="primary">Calcular inventario</Button>
