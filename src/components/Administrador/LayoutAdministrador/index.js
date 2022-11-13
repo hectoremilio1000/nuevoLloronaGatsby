@@ -25,25 +25,22 @@ function LayoutAdministrador({ signOut }) {
     setCurrent(e.key);
   };
 
-  const clearCacheData = () => {
-    caches.keys().then(names => {
-      names.forEach(name => {
-        caches.delete(name);
-      });
-    });
-    console.log("Complete Cache Cleared");
-  };
+  // const clearCacheData = () => {
+  //   caches.keys().then(names => {
+  //     names.forEach(name => {
+  //       caches.delete(name);
+  //     });
+  //   });
+  //   console.log("Complete Cache Cleared");
+  // };
 
-  const clearDataStore = async () => {
-    await DataStore.clear();
-    console.log('datastore clearead')
-  }
+  // const clearDataStore = async () => {
+  //   await DataStore.clear();
+  //   console.log('datastore clearead')
+  // }
 
 
-  useEffect(() => {
-    clearCacheData();
-    clearDataStore();
-  }, [])
+
   
   return (
     <>

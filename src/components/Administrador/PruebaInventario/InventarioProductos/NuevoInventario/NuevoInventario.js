@@ -13,7 +13,6 @@ function NuevoInventario({ productoID }) {
   const [invFisInic, setInvFisInic] = useState("");
   const [invFisFin, setInvFisFin] = useState("");
   const [ventas, setVentas] = useState("");
-  const [ventasNegativo, setVentasNegativo] = useState("");
 
 
   const onChangeInicial = (date, dateString) => {
@@ -27,15 +26,6 @@ function NuevoInventario({ productoID }) {
   const onChangeVentas = (value) => {
     setVentas(parseFloat(value));
   }
-
- 
-    const VentasNegativo = async () => {
-    const numero = await ventas;
-      const numeroNegativo = -numero;
-      setVentasNegativo(parseFloat(numeroNegativo));
-    };
-
-  
 
   const GenerarInventario = async () => {
     const numero = - (ventas);
