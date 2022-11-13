@@ -69,17 +69,11 @@ try {
       dataIndex: 'name',
       key:'name'
   }]
-  
-  
-
-  console.log(products)
-
-  // console.log(events)
 
 
 
   return (
-    <div>
+    <div >
       {showSpin ? <Spin size="large" /> :
         <Table columns={columns} dataSource={products} rowKey="id" onRow={producto => ({
           onClick: () => navigate(`producto/${producto.id}`, {replace:true})

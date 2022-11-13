@@ -52,8 +52,7 @@ function Producto({ id }) {
     setInventarioProducto(inventarioId);
   };
 
-  //  console.log(id);
-  // console.log(producto);
+
 
   useEffect(() => {
     if (!id) {
@@ -88,8 +87,6 @@ function Producto({ id }) {
 
   // console.log(inventarioProducto)
 
-  console.log("producto", id)
-
    const mostrarCrearInventario = () => {
      setMostrarCrear(!mostrarCrear);
    };
@@ -105,13 +102,13 @@ function Producto({ id }) {
       >
         Da click para Regresar
       </Button>
-      <Card title="Editar Producto">
-        <div style={{ marginBottom: 4 }}>
+      <Card title="Editar Producto" key={id}>
+        <div style={{ marginBottom: 4 }} key={id}>
           <Typography>Producto Id: {id}</Typography>
-          <Button onClick={EliminarProducto} type="danger">
+          {/* <Button onClick={EliminarProducto} type="danger">
             {" "}
             Eliminar Producto
-          </Button>
+          </Button> */}
         </div>
         <Divider />
         <Title level={4}>Nombre del Producto: {name}</Title>
@@ -132,7 +129,7 @@ function Producto({ id }) {
           <Button onClick={mostrarCrearInventario}>Crear Inventario</Button>
 
           {mostrarCrear && (
-            <Card>
+            <Card key={id}>
               <NuevoInventario productoID={id} />
             </Card>
           )}
@@ -147,6 +144,7 @@ function Producto({ id }) {
             return (
               <>
                 <Card>
+                 
                   <CorteInvenario id={id} />
                 </Card>
               </>

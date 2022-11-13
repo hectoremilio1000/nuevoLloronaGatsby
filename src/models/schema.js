@@ -104,19 +104,10 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
-                "type": {
-                    "name": "type",
-                    "isArray": false,
-                    "type": {
-                        "enum": "TypeInventory"
-                    },
-                    "isRequired": false,
-                    "attributes": []
-                },
                 "quantity": {
                     "name": "quantity",
                     "isArray": false,
-                    "type": "String",
+                    "type": "Float",
                     "isRequired": false,
                     "attributes": []
                 },
@@ -132,13 +123,6 @@ export const schema = {
                     "isArray": false,
                     "type": "ID",
                     "isRequired": true,
-                    "attributes": []
-                },
-                "totalCompras": {
-                    "name": "totalCompras",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
                     "attributes": []
                 },
                 "createdAt": {
@@ -205,14 +189,14 @@ export const schema = {
                 "inventarioInicialFisico": {
                     "name": "inventarioInicialFisico",
                     "isArray": false,
-                    "type": "String",
+                    "type": "Float",
                     "isRequired": false,
                     "attributes": []
                 },
                 "inventarioFinalFisico": {
                     "name": "inventarioFinalFisico",
                     "isArray": false,
-                    "type": "String",
+                    "type": "Float",
                     "isRequired": false,
                     "attributes": []
                 },
@@ -237,6 +221,36 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
+                "ventas": {
+                    "name": "ventas",
+                    "isArray": false,
+                    "type": "Float",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "compras": {
+                    "name": "compras",
+                    "isArray": false,
+                    "type": "Float",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "total": {
+                    "name": "total",
+                    "isArray": false,
+                    "type": "Float",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "tipoTotal": {
+                    "name": "tipoTotal",
+                    "isArray": false,
+                    "type": {
+                        "enum": "Tipototal"
+                    },
+                    "isRequired": false,
+                    "attributes": []
+                },
                 "StockEventInventarios": {
                     "name": "StockEventInventarios",
                     "isArray": true,
@@ -250,36 +264,6 @@ export const schema = {
                         "connectionType": "HAS_MANY",
                         "associatedWith": "inventarioID"
                     }
-                },
-                "ventas": {
-                    "name": "ventas",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "compras": {
-                    "name": "compras",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "total": {
-                    "name": "total",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "tipoTotal": {
-                    "name": "tipoTotal",
-                    "isArray": false,
-                    "type": {
-                        "enum": "Tipototal"
-                    },
-                    "isRequired": false,
-                    "attributes": []
                 },
                 "createdAt": {
                     "name": "createdAt",
@@ -632,5 +616,5 @@ export const schema = {
     },
     "nonModels": {},
     "codegenVersion": "3.3.1",
-    "version": "3be9d43663d675ea75d3ce1f75530741"
+    "version": "ee3cada6da533644822cf833ed50b6e9"
 };

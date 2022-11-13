@@ -10,6 +10,7 @@ import InventarioProductos from '../PruebaInventario/InventarioProductos';
 import ListaHoteles from '../Hoteles/ListaHoteles';
 import CrearHotel from '../Hoteles/CrearHotel';
 import CrearProductoPrueba from '../PruebaInventario/CrearProductoPrueba';
+import { DataStore } from "aws-amplify";
 
 const { Sider, Header, Content } = Layout;
 
@@ -33,9 +34,15 @@ function LayoutAdministrador({ signOut }) {
     console.log("Complete Cache Cleared");
   };
 
+  const clearDataStore = async () => {
+    await DataStore.clear();
+    console.log('datastore clearead')
+  }
+
 
   useEffect(() => {
-  clearCacheData();
+    clearCacheData();
+    clearDataStore();
   }, [])
   
   return (

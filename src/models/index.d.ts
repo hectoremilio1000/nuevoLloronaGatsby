@@ -70,22 +70,18 @@ export declare const Hotel: (new (init: ModelInit<Hotel, HotelMetaData>) => Hote
 
 type EagerStockEventInventario = {
   readonly id: string;
-  readonly type?: TypeInventory | keyof typeof TypeInventory | null;
-  readonly quantity?: string | null;
+  readonly quantity?: number | null;
   readonly fecha?: string | null;
   readonly inventarioID: string;
-  readonly totalCompras?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
 
 type LazyStockEventInventario = {
   readonly id: string;
-  readonly type?: TypeInventory | keyof typeof TypeInventory | null;
-  readonly quantity?: string | null;
+  readonly quantity?: number | null;
   readonly fecha?: string | null;
   readonly inventarioID: string;
-  readonly totalCompras?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -98,32 +94,32 @@ export declare const StockEventInventario: (new (init: ModelInit<StockEventInven
 
 type EagerInventario = {
   readonly id: string;
-  readonly inventarioInicialFisico?: string | null;
-  readonly inventarioFinalFisico?: string | null;
+  readonly inventarioInicialFisico?: number | null;
+  readonly inventarioFinalFisico?: number | null;
   readonly fechaInicioConteoFisico?: string | null;
   readonly fechaFinConteoFisico?: string | null;
   readonly productsID: string;
-  readonly StockEventInventarios?: (StockEventInventario | null)[] | null;
-  readonly ventas?: string | null;
-  readonly compras?: string | null;
-  readonly total?: string | null;
+  readonly ventas?: number | null;
+  readonly compras?: number | null;
+  readonly total?: number | null;
   readonly tipoTotal?: Tipototal | keyof typeof Tipototal | null;
+  readonly StockEventInventarios?: (StockEventInventario | null)[] | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
 
 type LazyInventario = {
   readonly id: string;
-  readonly inventarioInicialFisico?: string | null;
-  readonly inventarioFinalFisico?: string | null;
+  readonly inventarioInicialFisico?: number | null;
+  readonly inventarioFinalFisico?: number | null;
   readonly fechaInicioConteoFisico?: string | null;
   readonly fechaFinConteoFisico?: string | null;
   readonly productsID: string;
-  readonly StockEventInventarios: AsyncCollection<StockEventInventario>;
-  readonly ventas?: string | null;
-  readonly compras?: string | null;
-  readonly total?: string | null;
+  readonly ventas?: number | null;
+  readonly compras?: number | null;
+  readonly total?: number | null;
   readonly tipoTotal?: Tipototal | keyof typeof Tipototal | null;
+  readonly StockEventInventarios: AsyncCollection<StockEventInventario>;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { HomeHeader } from "../components/styles/headers";
 import { QuickInfoWrapper } from "../components/styles/globalStyles";
-import { Amplify, I18n, Auth } from "aws-amplify";
+import { Amplify, I18n, Auth, DataStore } from "aws-amplify";
 
 import { Button, Container } from "react-bootstrap";
 import { navigate } from "gatsby";

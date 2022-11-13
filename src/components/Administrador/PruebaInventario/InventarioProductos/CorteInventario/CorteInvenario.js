@@ -1,7 +1,10 @@
-import { Button, Card, Col, Divider, Form, Row, Typography } from 'antd'
+import { Button, Card, Col, Divider, Form, message, Row, Typography } from 'antd'
 import { DataStore } from 'aws-amplify';
 import React, { useEffect, useState } from 'react'
-import { Inventario } from '../../../../../models';
+import { Inventario, StockEventInventario } from '../../../../../models';
+import MostrarCompras from '../MotrarCompras/MostrarCompras';
+import Compras from '../NuevoInventario/Compras/Compras';
+import BorrarInventario from './BorrarInvenario';
 
 
 const { Item } = Form;
@@ -15,10 +18,18 @@ function CorteInvenario({ id }) {
   const [tipoTotal, setTipoTotal] = useState("");
   const [cantidad, setCantidad] = useState("")
   const [invMes, setInvMes] = useState("");
+  const [mensajeCompras, setMensajeCompras] = useState(false);
+
+  const [showEditar, setShowEditar] = useState(false);
+
+  const [mostrarCompras, setMostrarCompras] = useState(false);
+
+  // eventsCompras
+  const [eventCompras, setEventCompras] = useState([]);
 
   
-
-
+  
+ 
   const inventarioProducto = async () => {
     const inventarioIdProducto = await DataStore.query(Inventario, id);
     setInventario(inventarioIdProducto);
@@ -28,13 +39,28 @@ function CorteInvenario({ id }) {
     inventarioProducto();
   }, [id])
 
+  // fetch stockCompras
+  const FetchCompras = async () => {
+    const ComprasTotales = await DataStore.query(StockEventInventario, stock => stock.inventarioID('eq', id));
+    setEventCompras(ComprasTotales);
+  }
+
+  useEffect(() => {
+    if (!id) {
+      return
+    }
+    FetchCompras();
+    const subscription = DataStore.observe(Inventario).subscribe(FetchCompras);
+    subscription.unsubscribe();
+  }, [id]);
+
   const array = [
     Number(inventario?.inventarioInicialFisico), Number(inventario?.inventarioFinalFisico)
   ];
   const initialValue = 0;
   // console.log(array);
   const quantity = array.reduce((a, b) => a + b, initialValue);
-  // console.log(quantity);
+
 
   useEffect(() => {
     if (!quantity) {
@@ -46,8 +72,8 @@ function CorteInvenario({ id }) {
 
   useEffect(() => {
     if (!quantity) {
-    return
-  }
+      return
+    }
     if (quantity > 0) {
       setTipoTotal("SOBRANTE");
     } else if (quantity < 0) {
@@ -55,10 +81,8 @@ function CorteInvenario({ id }) {
     } else if (quantity === 0) {
       setTipoTotal("CUADRA");
     }
-}, [quantity])
-  
-  // console.log(tipoTotal);
-  // console.log(quantity);
+  }, [quantity])
+
 
  
 
@@ -71,18 +95,49 @@ function CorteInvenario({ id }) {
     setInvMes(definirMes);
   }, [inventario?.fechaInicioConteoFisico])
   
-  
+  const EditarInventario = () => {
+    setShowEditar(!showEditar)
+  }
+
+  const ShowCompras = () => {
+    setMostrarCompras(!mostrarCompras);
+  };
+
+  const GenerarCalculo = async () => {
+    try {
+      await DataStore.save(
+        Inventario.copyOf(inventario, updated => {
+          updated.total = cantidad,
+            updated.tipoTotal = tipoTotal
+        })
+      );
+      window.location.reload(false);
+      message.success('inventario final generado correctamente')
+    } catch (error) {
+      console.log(error);
+      message.error('contacta al administrador')
+    }
+    
+  }
+
+
   
   return (
-    <Card key={id}>
-     
-
-      <Divider />
+    <div key={id}>
+      {/* <BorrarInventario id={id} /> */}
       {inventario?.fechaInicioConteoFisico &&
         inventario?.fechaFinConteoFisico &&
         quantity && (
-          <Card>
-          <Typography.Title level={4}>Inventario del mes: { invMes}</Typography.Title>
+          <Card key={id}>
+            <Typography.Text type="default">
+              Inventario id: {id}
+            </Typography.Text>
+            <Typography.Title level={4}>
+              Inventario del mes: {invMes}{" "}
+              {/* <Button type="primary" onClick={EditarInventario}>
+                Editar inventario o Agregar Compras
+              </Button> */}
+            </Typography.Title>{" "}
             <Typography.Text>
               Fecha inicial: {inventario?.fechaInicioConteoFisico}
             </Typography.Text>
@@ -91,29 +146,77 @@ function CorteInvenario({ id }) {
               Fecha inicial: {inventario?.fechaFinConteoFisico}
             </Typography.Text>
             <Divider />
-            <Card>
+            <>
+              {!inventario?.compras ? (
+                <div>
+                  <Typography.Text type="danger">
+                    Recuerda agregar las compras en el botón de Editar
+                    Inventario
+                  </Typography.Text>
+                </div>
+              ) : (
+                <></>
+              )}
               <Row>
-                <Col span={4}>Inv Físico Inicial</Col>
-                <Col span={4}>Compras</Col>
-                <Col span={4}>Ventas</Col>
-                <Col span={4}>Inv Físico Fin</Col>
+                <Col span={3}>Inv Físico Inicial</Col>
+                <Col span={3}>Compras</Col>
+                <Col span={3}>Ventas</Col>
+                <Col span={3}>Inv Físico Fin</Col>
                 <Col span={4}>Cantidad Sob/Falt</Col>
                 <Col span={4}>Sob/Falt</Col>
+                {inventario?.inventarioInicialFisico &&
+                inventario?.compras &&
+                inventario?.ventas &&
+                inventario?.inventarioFinalFisico ? (
+                  <Col span={4}>
+                    <Button
+                      style={{
+                        width: 125,
+                        height: "auto",
+                        whiteSpace: "normal",
+                      }}
+                      type="danger"
+                      onClick={GenerarCalculo}
+                    >
+                      Generar Sobrante o faltante
+                    </Button>
+                  </Col>
+                ) : (
+                  <></>
+                )}
               </Row>
               <Row>
-                <Col span={4}>{inventario?.inventarioInicialFisico}</Col>
-                <Col span={4}>{inventario?.compras}</Col>
-                <Col span={4}>{inventario?.ventas}</Col>
-                <Col span={4}>{inventario?.inventarioFinalFisico}</Col>
-                <Col span={4}>
-                  {inventario?.total}
-                </Col>
+                <Col span={3}>{inventario?.inventarioInicialFisico}</Col>
+                <Col span={3}>{inventario?.compras}</Col>
+                <Col span={3}>{inventario?.ventas}</Col>
+                <Col span={3}>{inventario?.inventarioFinalFisico}</Col>
+                <Col span={4}>{inventario?.total}</Col>
                 <Col span={4}>{inventario?.tipoTotal}</Col>
               </Row>
-            </Card>
+            </>
+            <Divider />
+            {!inventario?.compras && (
+              <Button
+                type="primary"
+                onClick={ShowCompras}
+                style={{ marginBottom: 5 }}
+              >
+                Mostrar Compras
+              </Button>
+            )}
+            {mostrarCompras && !inventario?.compras && (
+              <Card>
+                <MostrarCompras id={id} />
+              </Card>
+            )}
+            {/* {showEditar && !inventario?.compras && (
+              <Card title="Editar Inventario">
+                <Compras id={id} />
+              </Card>
+            )} */}
           </Card>
         )}
-    </Card>
+    </div>
   );
 }
 

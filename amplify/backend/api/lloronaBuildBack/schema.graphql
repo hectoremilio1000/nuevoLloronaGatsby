@@ -16,25 +16,23 @@ type Hotel @model @auth(rules: [{allow: public}]) {
 
 type StockEventInventario @model @auth(rules: [{allow: public}]) {
   id: ID!
-  type: TypeInventory
-  quantity: String
+  quantity: Float
   fecha: String
   inventarioID: ID! @index(name: "byInventario")
-  totalCompras: String
 }
 
 type Inventario @model @auth(rules: [{allow: public}]) {
   id: ID!
-  inventarioInicialFisico: String
-  inventarioFinalFisico: String
+  inventarioInicialFisico: Float
+  inventarioFinalFisico: Float
   fechaInicioConteoFisico: String
   fechaFinConteoFisico: String
   productsID: ID! @index(name: "byProducts")
-  StockEventInventarios: [StockEventInventario] @hasMany(indexName: "byInventario", fields: ["id"])
-  ventas: String
-  compras: String
-  total: String
+  ventas: Float
+  compras: Float
+  total: Float
   tipoTotal: TIPOTOTAL
+  StockEventInventarios: [StockEventInventario] @hasMany(indexName: "byInventario", fields: ["id"])
 }
 
 enum TypeInventory {
