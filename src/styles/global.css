@@ -3,11 +3,99 @@
   align-items: start;
 }
 
+.contenedorLenguaje{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.textoFotosHome{
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}
+.imagen2AbajoTexto1Home{
+   width: 200px;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 10px;
+  object-fit: cover
+}
+
+.imagenAbajoTexto1Home {
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 10px;
+  object-fit: cover
+}
+
+.buttonComponent {
+  display: table-cell;
+  width: 200px;
+  height: 75px;
+  border: 2px solid #2be989;
+  vertical-align: middle
+}
+
+.contenedorMenu{
+display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.buttonText{
+  color:rgba(0, 0, 0, 0.85);
+  font-size: 20px;
+  text-align: center;
+  margin:0
+}
+
+
+.iconoAbajoTexto1Home {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  object-fit: cover
+}
+
+ .texto1Home{
+    font-size: 25px;
+  }
+
+  .bannerMenu{
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenu.jpg");
+            background-size: cover !important;
+background-repeat: no-repeat;
+            height: 100vh;
+            background-position: center;
+}
+
+.bannerHome{
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerHome1-1.jpg");
+            background-size: cover !important;
+background-repeat: no-repeat;
+            height: 100vh;
+            background-position: center;
+}
+
+.fondo2{
+    background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/subfondo/subfondo1/Asset+1+copy.png");
+            background-size: cover !important;
+background-repeat: no-repeat;
+            height: 100%;
+            width: 100% !important;
+            background-position: center;
+            
+}
+
 .bannerCantina{
   background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/cantina/bannerCantina.jpg");
   background-size: cover;
   height: 100vh;
-  background-position: top;    
+  background-position: top;  
 }
 
 .LloronaNombre {
@@ -46,6 +134,11 @@
   font-size: 20px !important;
   color: black !important;
   margin-top: -10px;
+}
+.bannerHomeTexto{
+   font-size: 30px !important;
+  color: rgba(255, 255, 255, 0) !important;
+  text-align: center !important;
 }
 
 .proximamente {
@@ -96,6 +189,14 @@
   padding-top: 10px;
 }
 
+.tituloSection2{
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  color: white;
+  text-align: center !important;
+  font-weight: 800;
+}
+
 /*secciones*/
 .tituloSection {
   letter-spacing: 0.3rem;
@@ -109,6 +210,21 @@
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center !important;
+}
+
+.subTituloSection1{
+ letter-spacing: 0.3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center !important;
+  color: black;
+}
+
+.linea1{
+  width: 5rem;
+  height: 0.2rem;
+  background: white;
+  margin: 0.5rem auto;
 }
 
 .linea {
@@ -188,16 +304,69 @@ ul {
   font-size: 14px !important;
 }
 
+/* css de ipad*/
 @media (max-width: 1100px) {
   .iniciar_sesion {
     font-size: 13px;
   }
+  .contenedorMenu{
+    flex-wrap: nowrap;
+  }
   .registrar_sesion {
     font-size: 13px;
   }
+
+  .textoFotosHome{
+margin-top: 0px;
+  }
+
+   .texto1Home{
+    font-size: 18px;
+    color: black !important;
+  }
+
+  .imagenAbajoTexto1Home {
+    margin-bottom: 20px;
+  }
+
+  .iconoAbajoTexto1Home{
+    margin-bottom: 20px;
+  }
+
+    .bannerMenu{
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenuMovil.jpg");
+            background-size: cover !important;
+background-repeat: no-repeat;
+            height: 100vh;
+            background-position: center;
 }
 
+.bannerHome{
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerHome+2-3.jpg");
+            background-size: cover !important;
+background-repeat: no-repeat;
+            height: 100vh;
+            background-position: center;
+}
+.bannerHomeTexto{
+   font-size: 30px !important;
+  color: white !important;
+  text-align: center !important;
+}
+}
+
+/* css de celular*/
 @media (max-width: 500px) {
+
+  .contenedorMenu{
+display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedorA{
+  margin-top: 20px;
+}
 
   .bannerCantina{
   background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/cantina/bannerCantina500x1000.jpg") !important;
@@ -205,6 +374,14 @@ ul {
   height: 90vh !important;
   background-position: center !important;    
 }
+
+.imagenAbajoTexto1Home {
+  margin-right: 0px;
+}
+
+ .iconoAbajoTexto1Home{
+    margin-right: 0px;
+  }
 
   .boton_orina {
     margin-top: 2.4rem !important;
@@ -215,6 +392,7 @@ ul {
     align-items: center;
   }
 
+ 
   
 
   /* Calendario*/

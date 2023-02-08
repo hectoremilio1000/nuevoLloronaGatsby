@@ -10,10 +10,10 @@ import menuMixologia from "../../../data/imagenes/MenuIngles/mixologianuevo18102
 import menuTacos from "../../../data/imagenes/MenuIngles/tacosmenuingles020622.jpg";
 import menuPizzas from "../../../data/imagenes/MenuIngles/menupizzaingles051022.jpg";
 import menuVeggie from "../../../data/imagenes/MenuIngles/menuveggie051022INGLES.jpg";
-import menuBebidas1 from "../../../data/imagenes/MenuEspanol/destilados octubre 2022-1.jpg";
-import menuBebidas2 from "../../../data/imagenes/MenuEspanol/destilados octubre 2022-2.jpg";
-import menuBebidas3 from "../../../data/imagenes/MenuEspanol/destilados octubre 2022-3.jpg";
-import menuBebidas4 from "../../../data/imagenes/MenuEspanol/destilados octubre 2022-4.jpg";
+import menuBebidas1 from "../../../data/imagenes/MenuEspanol/HARRY 2023 ACTUAL-1.jpg";
+import menuBebidas2 from "../../../data/imagenes/MenuEspanol/HARRY 2023 ACTUAL-2.jpg";
+import menuBebidas3 from "../../../data/imagenes/MenuEspanol/HARRY 2023 ACTUAL-3.jpg";
+import menuBebidas4 from "../../../data/imagenes/MenuEspanol/HARRY 2023 ACTUAL-4.jpg";
 
 function MenuInlges() {
   return (

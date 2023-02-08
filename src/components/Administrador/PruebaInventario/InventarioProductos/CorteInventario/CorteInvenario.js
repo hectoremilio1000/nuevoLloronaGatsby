@@ -10,7 +10,6 @@ import BorrarInventario from './BorrarInvenario';
 const { Item } = Form;
 
 
-
 function CorteInvenario({ id }) {
   const [inventario, setInventario] = useState(null);
   const [compras, setCompras] = useState("");
@@ -18,7 +17,7 @@ function CorteInvenario({ id }) {
   const [tipoTotal, setTipoTotal] = useState("");
   const [cantidad, setCantidad] = useState("")
   const [invMes, setInvMes] = useState("");
-  const [mensajeCompras, setMensajeCompras] = useState(false);
+ 
 
   const [showEditar, setShowEditar] = useState(false);
 

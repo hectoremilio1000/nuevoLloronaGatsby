@@ -9,33 +9,81 @@ import "../../styles/global.css";
 const QuickInfo = () => (
   <Section className="mt-2">
     <div>
-      <h1 className="text-center font-weight-bold">Cantina La Llorona</h1>
+      <h1 className="text-center font-weight-bold">La Llorona Xperience</h1>
     </div>
     <div>
-      <h4 className="text-center tituloSection">Hacia TI</h4>
-      <h2 className="text-center subTituloSection">Nuestra promesa</h2>
+      <h4 className="text-center tituloSection">¿Cómo ser un</h4>
+      <h2 className="text-center subTituloSection">Mexicano?</h2>
       <div className="linea"></div>
     </div>
 
     <QuickInfoWrapper>
-      <p className="text text-center">
-        La Llorona surge de la fusión de la riqueza de la cocina urbana
-        contemporánea y la vida de la cantina mexicana. Nuestra especialidad son
-        las Hamburguesas con pan artesanal horneado por nosotros, con carne 100%
-        sirloin importada desde Estados Unidos y ya sea que pidas «Ella es
-        queso» que tiene un fondue de queso Suizo con kirsch (licor de cerezas)
-        y vino blanco o la «Porky Pig» que es preparada con nuestra receta única
-        de brocheta de tocino crujiente .
+      <p className="text text-center texto1Home">
+        Toma nuestros cocteles con <b>Pulque y Mezcal</b>. Prueba con nosotros
+        la gastronomía urbana mexicana que va desde{" "}
+        <b>tacos, memelas hasta hamburguesas</b> y deleítate con una exquisita
+        <b> Cerveza Artesanal Mexicana</b> que encontraras AQUÍ.
       </p>
-
-      <div className="subSubDiv1Banner">
-        <Link to="/reserva">
-          <button type="button" className="buttonComponente">
-            ¡Reserva ya!
-          </button>
-        </Link>
-      </div>
     </QuickInfoWrapper>
+    <div
+      style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
+    >
+      <div>
+        <img
+          className="imagenAbajoTexto1Home"
+          src="https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/mexican-shredded-pork-recipes-900x900.jpg"
+          alt="Tacos deliciosos de Cochinita Pibil"
+        />
+        <p className="textoFotosHome">Tacos de Cochinita Pibil</p>
+      </div>
+      <Link to="menu/menualimentos">
+        <div>
+          <img
+            className="imagenAbajoTexto1Home"
+            src="https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/aguachileVerde.jpg"
+            alt="Pierde Almas con Mezcal"
+          />
+          <p className="textoFotosHome">
+            Aguachile Verde <br />
+            de Camarón
+          </p>
+        </div>
+      </Link>
+      <Link to="menu/menualimentos">
+        <div>
+          <img
+            className="imagenAbajoTexto1Home"
+            src="https://imagenesrutalab.s3.amazonaws.com/llorona/HAMBURGUESA_jack_suizo.JPG"
+            alt="Tacos deliciosos de Cochinita Pibil"
+          />
+          <p className="textoFotosHome">
+            Hamburguesa Más Trendy de <br />
+            México con especias mexicanas
+          </p>
+        </div>
+      </Link>
+      <Link to="menu/menubebidas/mixologia">
+        <div>
+          <img
+            className="imagenAbajoTexto1Home"
+            src="https://imagenesrutalab.s3.amazonaws.com/llorona/mixologia/IMG_8064.jpg"
+            alt="Pierde Almas con Mezcal"
+          />
+          <p className="textoFotosHome">
+            Pierde Almas con
+            <br />
+            Mezcal Artesanal
+          </p>
+        </div>
+      </Link>
+    </div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <Link to="/reserva">
+        <button type="button" className="buttonComponente">
+          ¡Reserva ya!
+        </button>
+      </Link>
+    </div>
   </Section>
 );
 

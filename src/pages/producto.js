@@ -105,10 +105,10 @@ function Producto({ id }) {
       <Card title="Editar Producto" key={id}>
         <div style={{ marginBottom: 4 }} key={id}>
           <Typography>Producto Id: {id}</Typography>
-          {/* <Button onClick={EliminarProducto} type="danger">
+          <Button onClick={EliminarProducto} type="danger">
             {" "}
             Eliminar Producto
-          </Button> */}
+          </Button>
         </div>
         <Divider />
         <Title level={4}>Nombre del Producto: {name}</Title>

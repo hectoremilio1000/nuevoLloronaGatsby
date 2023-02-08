@@ -16,10 +16,10 @@ function Mezcal() {
       <header
         className="col jumbotron-fluid bannerFinal2"
         style={{
-          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9973.jpg")`,
-          backgroundSize: "cover",
-          height: "100vh",
-          backgroundPosition: "left",
+          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerHome+2-2.jpg")`,
+          backgroundSize: "contain",
+          height: "80vh",
+          backgroundPosition: "center",
         }}
       >
         <div className="d-flex subContenedor2Banner">
